@@ -88,54 +88,14 @@ const Marketing: React.FC = () => {
     { indicadores: "Interações (curtidas, engajamento, compartilhamento e salvamentos)", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov:"-" ,dez: "-" , acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, },
     { indicadores: "Taxa de engajamento", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado:  { fieam: "-", sesi: "-", senai: "-", iel: "-" }, },
     { indicadores: "Crescimento de Seguidores", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" } , },
-  ];
 
-  const categorizeIndicator = (indicator: string): string => {
-    const pagoIndicators = [
-      "Campanhas ativas",
-      "Roteiro de vídeos",
-      "Vídeos",
-      "Revisão de Vídeos",
-      "Revisão de Cards",
-      "Espelho das Peças Concluídos",
-      "Cards",
-      "Stories",
-      "Flyers",
-      "Textos/ Copies",
-      "Publicação nas redes sociais",
-      "Resposta de comentários nas redes sociais",
-    ];
-  
-    const emailIndicators = [
-      
-     "Contas Alcançadas",
-      "Impressões",
-      "Interações (curtidas, engajamento, compartilhamento e salvamentos)",
-      "Taxa de engajamento",
-      "Crescimento de Seguidores"
-    
-    ];
-   // const siteIndicators = ["Site - Visitantes únicos"];
-  
-    if (pagoIndicators.includes(indicator)) return "Midia ON e OFF";
-    if (emailIndicators.includes(indicator)) return "Orgânico";
-    //if (siteIndicators.includes(indicator)) return "Site";
-  
-    return "Outro";
-  };
+  ];
 
   const handleTabChange = (event: React.SyntheticEvent, newValue: string) => {
     setSelectedYear(newValue);
   };
 
   const data = selectedYear === "2024" ? data2024 : data2025;
-
-  const groupedData = data.reduce((acc, row) => {
-    const category = categorizeIndicator(row.indicadores);
-    if (!acc[category]) acc[category] = [];
-    acc[category].push(row);
-    return acc;
-  }, {});
 
   return (
     <div style={{ padding: "20px" }}>
@@ -147,9 +107,11 @@ const Marketing: React.FC = () => {
       >
         Voltar
       </Button>
+
       <Typography variant="h4" gutterBottom>
         Setor: Marketing
       </Typography>
+
       <Box sx={{ width: "100%", marginBottom: "20px" }}>
         <Tabs
           value={selectedYear}
@@ -162,150 +124,113 @@ const Marketing: React.FC = () => {
           <Tab value="2025" label="2025" />
         </Tabs>
       </Box>
+
       <Paper sx={{ marginTop: "20px" }}>
         <TableContainer>
           <Table>
-          <TableHead>
-  <TableRow>
-  <TableCell
-  rowSpan={2}
-  style={{
-    backgroundColor: "#ADD8E6",
-    fontWeight: "bold",
-    textAlign: "center",
-    verticalAlign: "middle",
-    padding: "4px",
-    width: "30px", 
-    maxWidth: "30px", 
-    whiteSpace: "nowrap",
-  }}
->
-Tipo
-</TableCell>
-    <TableCell
-      rowSpan={2}
-      style={{
-        fontWeight: "bold",
-        backgroundColor: "#ADD8E6",
-        padding: "2px",
-        textAlign: "center",
-        minWidth: "180px",
-        maxWidth: "180px",
-        width: "180px",
-      
-      }}
-    >
-      Indicadores
-    </TableCell>
-    {["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"].map(
-      (month, index) => (
-        <TableCell
-          key={index}
-          rowSpan={2}
-          align="center"
-          style={{
-            fontWeight: "bold",
-            backgroundColor: "#ADD8E6",
-            padding: "8px",
-            minWidth: "60px",
-          }}
-        >
-          {month}
-        </TableCell>
-      )
-    )}
-    <TableCell
-      colSpan={4}
-      align="center"
-      style={{
-        fontWeight: "bold",
-        backgroundColor: "#4682B4",
-        color: "white",
-        padding: "8px",
-      }}
-    >
-      Acumulado
-    </TableCell>
-  </TableRow>
-  <TableRow>
-    {["FIEAM", "SESI", "SENAI", "IEL"].map((name, index) => (
-      <TableCell
-        key={`acumulado-${index}`}
-        align="center"
-        style={{
-          fontWeight: "bold",
-          backgroundColor: "#4682B4",
-          color: "white",
-          padding: "8px",
-        }}
-      >
-        {name}
-      </TableCell>
-    ))}
-  </TableRow>
-</TableHead>
+            <TableHead
+              sx={{
+                "& .MuiTableRow-root": {
+                  height: "30px",
+                },
+                "& .MuiTableCell-root": {
+                  padding: "4px 6px",
+                  lineHeight: "1",
+                },
+              }}
+            >
+              <TableRow>
+                <TableCell
+                  rowSpan={2}
+                  style={{
+                    fontWeight: "bold",
+                    backgroundColor: "#ADD8E6",
+                    padding: "8px",
+                    minWidth: "120px",
+                  }}
+                >
+                  Indicadores
+                </TableCell>
+                {["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"].map(
+                  (month, index) => (
+                    <TableCell
+                      key={index}
+                      rowSpan={2}
+                      align="center"
+                      style={{
+                        fontWeight: "bold",
+                        backgroundColor: "#ADD8E6",
+                        padding: "8px",
+                        minWidth: "60px",
+                      }}
+                    >
+                      {month}
+                    </TableCell>
+                  )
+                )}
+                <TableCell
+                  colSpan={4}
+                  align="center"
+                  style={{
+                    fontWeight: "bold",
+                    backgroundColor: "#4682B4",
+                    color: "white",
+                    padding: "8px",
+                  }}
+                >
+                  Acumulado
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                {["FIEAM", "SESI", "SENAI", "IEL"].map((name, index) => (
+                  <TableCell
+                    key={`acumulado-${index}`}
+                    align="center"
+                    style={{
+                      fontWeight: "bold",
+                      backgroundColor: "#4682B4",
+                      color: "white",
+                      padding: "8px",
+                    }}
+                  >
+                    {name}
+                  </TableCell>
+                ))}
+              </TableRow>
+            </TableHead>
 
-<TableBody>
-  {Object.entries(groupedData).map(([category, rows]) => (
-    rows.map((row, rowIndex) => (
-      <TableRow
-        key={`${category}-${rowIndex}`}
-        sx={{
-          "& .MuiTableCell-root": {
-            padding: "4px 6px",
-            lineHeight: "1",
-          },
-          height: "30px",
-        }}
-      >
-        {rowIndex === 0 && (
-          <TableCell
-            rowSpan={rows.length}
-            align="center"
-            style={{
-              fontWeight: "bold",
-              verticalAlign: "middle",
-              transform: "rotate(-90deg)", 
-              textAlign: "center", 
-              minWidth: "25px", 
-              maxWidth: "25px",
-              width: "25px",
-              whiteSpace: "nowrap",
-              padding: "2px",
-            }}
-          >
-            {category}
-          </TableCell>
-        )}
-        <TableCell
-        style={{
-          fontWeight: "bold",
-          verticalAlign: "middle",
-          textAlign: "left", 
-          minWidth: "180px",
-          maxWidth: "180px",
-          width: "180px",
-          padding: "2px",
-        }}
-        >{row.indicadores}</TableCell>
-        {["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"].map((month) => (
-          <TableCell align="center" key={month}>
-            {typeof row[month] === "object"
-              ? Object.entries(row[month])
-                  .map(([key, value]) => `${key}: ${value}`)
-                  .join(", ")
-              : row[month] !== undefined
-              ? row[month]
-              : "-"}
-          </TableCell>
-        ))}
-        {["fieam", "sesi", "senai", "iel"].map((key) => (
-          <TableCell align="center" key={key}>
-            {row.acumulado && row.acumulado[key] !== undefined ? row.acumulado[key] : "-"}
-          </TableCell>
-        ))}
-      </TableRow>
-    ))
+            <TableBody>
+              {data.map((row, index) => (
+                <TableRow
+                  key={index}
+                  sx={{
+                    "& .MuiTableCell-root": {
+                      padding: "4px 6px",
+                      lineHeight: "1",
+                    },
+                    height: "30px",
+                  }}
+                >
+             <TableCell>{row.indicadores}</TableCell>
+      {["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"].map((month) => (
+        <TableCell align="center" key={month}>
+          {typeof row[month] === "object"
+            ? Object.entries(row[month])
+                .map(([key, value]) => `${key}: ${value}`)
+                .join(", ") // Concatena as entradas do objeto em uma string
+            : row[month] !== undefined
+            ? row[month]
+            : "-"}
+        </TableCell>
+      ))}
+      {["fieam", "sesi", "senai", "iel"].map((key) => (
+        <TableCell align="center" key={key}>
+          {row.acumulado && row.acumulado[key] !== undefined
+            ? row.acumulado[key]
+            : "-"}
+        </TableCell>
+      ))}
+    </TableRow>
   ))}
 </TableBody>
           </Table>
@@ -315,4 +240,5 @@ Tipo
     </div>
   );
 };
+
 export default Marketing;
