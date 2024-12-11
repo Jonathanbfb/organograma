@@ -22,7 +22,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <div style={{ padding: "20px", display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-      <header style={{ marginBottom: "20px", textAlign: "center" }}>
+      <header style={{ marginBottom: "20px", textAlign: "center", fontFamily:"Roboto"  }}>
         <h1>INDICADORES</h1>
         <h2>DCM</h2>
       </header>

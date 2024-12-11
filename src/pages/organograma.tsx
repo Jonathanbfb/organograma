@@ -1,17 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  FaUserTie,
-  FaBullhorn,
-  FaChartBar,
-  FaPalette,
-  FaPhoneAlt,
-  FaBuilding,
-  FaStore,
-  FaFacebook,
-  FaBrain,
-  FaAd,
-} from "react-icons/fa";
+//import "../App.css";
 
 const Organograma: React.FC = () => {
   const navigate = useNavigate();
@@ -67,7 +56,7 @@ const Organograma: React.FC = () => {
 
   return (
     <div style={styles.container}>
-      <h1>DIRETORIA CORPORATIVA DE MARKETING</h1>
+      <h1 className="header-title">DIRETORIA CORPORATIVA DE MARKETING</h1>
       {/* Nível 1 */}
       <div style={styles.nivel}>
         <button
@@ -155,7 +144,6 @@ const Organograma: React.FC = () => {
           </div>
         </button>
       </div>
-
       {/* Nível 3 */}
       <div style={styles.nivel}>
         <button
@@ -167,7 +155,7 @@ const Organograma: React.FC = () => {
          {/* // <FaBuilding style={styles.icone} /> */}
           <div style={{ textAlign: "center", lineHeight: "1.2" }}>
             <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
-              Coordenação de Administração
+              Coordenação Administrativa
             </h3>
             <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
               Edivalda Martins
@@ -231,7 +219,7 @@ const Organograma: React.FC = () => {
          {/* // <FaAd style={styles.icone} /> */}
           <div style={{ textAlign: "center", lineHeight: "1.2" }}>
             <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
-              Coordenação de Promoções e Eventos
+              Coordenação de Promoções e Propaganda
             </h3>
             <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
               Etienne Lopes

@@ -206,8 +206,8 @@ Tipo
           style={{
             fontWeight: "bold",
             backgroundColor: "#ADD8E6",
-            padding: "8px",
-            minWidth: "60px",
+            padding: "2px",
+            minWidth: "30px",
           }}
         >
           {month}

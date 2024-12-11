@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Paper,
@@ -10,114 +10,200 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  Tabs,
+  Tab,
+  Box,
 } from "@mui/material";
-import Box from "@mui/material/Box";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
 
 const RedesSociais: React.FC = () => {
   const navigate = useNavigate();
+  const [selectedYear, setSelectedYear] = useState("2024");
 
-  const data = [
-      {
-        "indicadores": "Número de anúncios",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": "-", "sesi": 146, "senai": 49, "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 195
-      },
-      {
-        "indicadores": "Alcance total",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": "-", "sesi": 336409, "senai": 176812, "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 513221
-      },
-      {
-        "indicadores": "Impressões (ADS)",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": "-", "sesi": 1398706, "senai": 887110, "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 2285816
-      },
-      {
-        "indicadores": "Cliques no anúncio",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": "-", "sesi": 14732, "senai": 9568, "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 24300
-      },
-      {
-        "indicadores": "CTR (Click-Through Rate)",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": "-", "sesi": 0.0105, "senai": 0.0108, "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 0.0213
-      },
-      {
-        "indicadores": "CPC (Custo por Clique)",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": "-", "sesi": 0.76, "senai": 0.98, "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 1.74
-      },
-      {
-        "indicadores": "COM (Custo por Mil Impressões)",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": "-", "sesi": 9.87, "senai": 9.01, "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 18.88
-      },
-      {
-        "indicadores": "Conversões",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": "-", "sesi": 2252, "senai": 1153, "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 3405
-      },
-      {
-        "indicadores": "Taxa de conversão (%)",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 0
-      },
-      {
-        "indicadores": "CPA (Custo por Aquisição)",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": "-", "sesi": 7.21, "senai": 8.15, "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 15.36
-      },
-      {
-        "indicadores": "Qtd de E-mails enviados",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": "-", "sesi": 45043, "senai": "-", "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 45043
-      },
-      {
-        "indicadores": "Taxa de abertura de e-mail",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": "-", "sesi": 0.0342, "senai": "-", "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 0.0342
-      },
-      {
-        "indicadores": "Site - Visitantes únicos",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-",
-        "nov": { "fieam": 210, "sesi": "-", "senai": "-", "iel": "-" },
-        "dez": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" },
-        "acumulado": 210
-      }
-    ]
+  const data2024 = [
     
+      
+        {
+          "indicadores": "Número de anúncios",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 195,
+          "acumulado": { "fieam": 0, "sesi": 146, "senai": 49, "iel": 0 }
+        },
+        {
+          "indicadores": "Alcance total",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 513221,
+          "acumulado": { "fieam": 0, "sesi": 336409, "senai": 176812, "iel": 0 }
+        },
+        {
+          "indicadores": "Impressões (ADS)",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 2285816,
+          "acumulado": { "fieam": 0, "sesi": 1398706, "senai": 887110, "iel": 0 }
+        },
+        {
+          "indicadores": "Cliques no anúncio",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 24300,
+          "acumulado": { "fieam": 0, "sesi": 14732, "senai": 9568, "iel": 0 }
+        },
+        {
+          "indicadores": "CTR (Click-Through Rate)",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 0.0213,
+          "acumulado": { "fieam": 0, "sesi": 0.0105, "senai": 0.0108, "iel": 0 }
+        },
+        {
+          "indicadores": "CPC (Custo por Clique)",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 1.74,
+          "acumulado": { "fieam": 0, "sesi": 0.76, "senai": 0.98, "iel": 0 }
+        },
+        {
+          "indicadores": "COM (Custo por Mil Impressões)",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 18.88,
+          "acumulado": { "fieam": 0, "sesi": 9.87, "senai": 9.01, "iel": 0 }
+        },
+        {
+          "indicadores": "Conversões",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 3405,
+          "acumulado": { "fieam": 0, "sesi": 2252, "senai": 1153, "iel": 0 }
+        },
+        {
+          "indicadores": "Taxa de conversão (%)",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 0,
+          "acumulado": { "fieam": 0, "sesi": 0, "senai": 0, "iel": 0 }
+        },
+        {
+          "indicadores": "CPA (Custo por Aquisição)",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 15.36,
+          "acumulado": { "fieam": 0, "sesi": 7.21, "senai": 8.15, "iel": 0 }
+        },
+        {
+          "indicadores": "Qtd de E-mails enviados",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 45043,
+          "acumulado": { "fieam": 0, "sesi": 45043, "senai": 0, "iel": 0 }
+        },
+        {
+          "indicadores": "Taxa de abertura de e-mail",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 0.0342,
+          "acumulado": { "fieam": 0, "sesi": 0.0342, "senai": 0, "iel": 0 }
+        },
+        {
+          "indicadores": "Site - Visitantes únicos",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 210,
+          "acumulado": { "fieam": 210, "sesi": 0, "senai": 0, "iel": 0 }
+        }
+      
+      
+  ];
+
+  const data2025 = [
+    {
+      "indicadores": "Número de anúncios",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Alcance total",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Impressões (ADS)",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Cliques no anúncio",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "CTR (Click-Through Rate)",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "CPC (Custo por Clique)",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "COM (Custo por Mil Impressões)",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Conversões",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Taxa de conversão (%)",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "CPA (Custo por Aquisição)",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Qtd de E-mails enviados",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Taxa de abertura de e-mail",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Site - Visitantes únicos",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    }
+  ]
   
+
+  const categorizeIndicator = (indicator: string): string => {
+    const pagoIndicators = [
+      "Número de anúncios",
+      "Alcance total",
+      "Impressões (ADS)",
+      "Cliques no anúncio",
+      "CTR (Click-Through Rate)",
+      "CPC (Custo por Clique)",
+      "COM (Custo por Mil Impressões)",
+      "Conversões",
+      "Taxa de conversão (%)",
+      "CPA (Custo por Aquisição)",
+    ];
+  
+    const emailIndicators = [
+      
+     "Qtd de E-mails enviados",
+      "Taxa de abertura de e-mail",
+      
+    ];
+   const siteIndicators = ["Site - Visitantes únicos"];
+  
+    if (pagoIndicators.includes(indicator)) return "Pago";
+    if (emailIndicators.includes(indicator)) return "Email";
+    if (siteIndicators.includes(indicator)) return "Site";
+  
+    return "Outro";
+  };
+
+  const handleTabChange = (event: React.SyntheticEvent, newValue: string) => {
+    setSelectedYear(newValue);
+  };
+
+  const data = selectedYear === "2024" ? data2024 : data2025;
+
+  const groupedData = data.reduce((acc, row) => {
+    const category = categorizeIndicator(row.indicadores);
+    if (!acc[category]) acc[category] = [];
+    acc[category].push(row);
+    return acc;
+  }, {});
 
   return (
     <div style={{ padding: "20px" }}>
-
-    
       <Button
         variant="contained"
         color="primary"
@@ -126,185 +212,176 @@ const RedesSociais: React.FC = () => {
       >
         Voltar
       </Button>
-
       <Typography variant="h4" gutterBottom>
-        Setor: Redes Sociais
+        Setor: Marketing
       </Typography>
-
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-  <Tabs aria-label="basic tabs example">
-    <Tab label="Item One"  />
-    <Tab label="Item Two" />
-    <Tab label="Item Three"/>
-  </Tabs>
-</Box>
-<CustomTabPanel index={0}>
-  Item One
-</CustomTabPanel>
-<CustomTabPanel index={1}>
-  Item Two
-</CustomTabPanel>
-<CustomTabPanel index={2}>
-  Item Three
-</CustomTabPanel>
-
-
+      <Box sx={{ width: "100%", marginBottom: "20px" }}>
+        <Tabs
+          value={selectedYear}
+          onChange={handleTabChange}
+          textColor="secondary"
+          indicatorColor="secondary"
+          aria-label="Tabs de anos"
+        >
+          <Tab value="2024" label="2024" />
+          <Tab value="2025" label="2025" />
+        </Tabs>
+      </Box>
       <Paper sx={{ marginTop: "20px" }}>
         <TableContainer>
           <Table>
-            <TableHead sx={{
-      "& .MuiTableRow-root": {
-        height: "30px", 
-      },
-      "& .MuiTableCell-root": {
-        padding: "4px 6px", 
-        lineHeight: "1",    
-      },
-    }}>
-              <TableRow>
-                <TableCell
-                  rowSpan={2}
-                  style={{
-                    fontWeight: "bold",
-                    backgroundColor: "#ADD8E6",
-                    padding: "8px",
-                    minWidth: "120px",
-                  }}
-                >
-                  Indicadores
-                </TableCell>
-                {["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out"].map((month, index) => (
-                  <TableCell
-                    key={index}
-                    rowSpan={2}
-                    align="center"
-                    style={{
-                      fontWeight: "bold",
-                      backgroundColor: "#ADD8E6",
-                      padding: "8px",
-                      minWidth: "60px",
-                    }}
-                  >
-                    {month}
-                  </TableCell>
-                ))}
-                <TableCell
-                  colSpan={4}
-                  align="center"
-                  style={{
-                    fontWeight: "bold",
-                    backgroundColor: "#4682B4",
-                    color: "white",
-                    padding: "8px",
-                  }}
-                >
-                  Nov
-                </TableCell>
-                <TableCell
-                  colSpan={4}
-                  align="center"
-                  style={{
-                    fontWeight: "bold",
-                    backgroundColor: "#4682B4",
-                    color: "white",
-                    padding: "8px",
-                  }}
-                >
-                  Dez
-                </TableCell>
-                <TableCell
-                  rowSpan={2}
-                  align="center"
-                  style={{
-                    fontWeight: "bold",
-                    backgroundColor: "#ADD8E6",
-                    padding: "8px",
-                    minWidth: "80px",
-                  }}
-                >
-                  Acumulado
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                {["FIEAM", "SESI", "SENAI", "IEL"].map((name, index) => (
-                  <TableCell
-                    key={`nov-${index}`}
-                    align="center"
-                    style={{
-                      fontWeight: "bold",
-                      backgroundColor: "#4682B4",
-                      color: "white",
-                      padding: "8px",
-                    }}
-                  >
-                    {name}
-                  </TableCell>
-                ))}
-                {["FIEAM", "SESI", "SENAI", "IEL"].map((name, index) => (
-                  <TableCell
-                    key={`dez-${index}`}
-                    align="center"
-                    style={{
-                      fontWeight: "bold",
-                      backgroundColor: "#4682B4",
-                      color: "white",
-                      padding: "8px",
-                    }}
-                  >
-                    {name}
-                  </TableCell>
-                ))}
-              </TableRow>
-            </TableHead>
-
-            <TableBody>
-  {data.map((row, index) => (
-    <TableRow
-      key={index}
-      sx={{
-        "& .MuiTableCell-root": {
-          padding: "4px 6px",
-          lineHeight: "1",   
-        },
-        height: "30px",     
+          <TableHead>
+  <TableRow>
+  <TableCell
+  rowSpan={2}
+  style={{
+    backgroundColor: "#ADD8E6",
+    fontWeight: "bold",
+    textAlign: "center",
+    verticalAlign: "middle",
+    padding: "4px",
+    width: "30px", 
+    maxWidth: "30px", 
+    whiteSpace: "nowrap",
+    overflow: "hidden", 
+   
+  }}
+>
+Tipo
+</TableCell>
+    <TableCell
+      rowSpan={2}
+      style={{
+        fontWeight: "bold",
+        backgroundColor: "#ADD8E6",
+        padding: "2px",
+        textAlign: "center",
+        minWidth: "180px",
+        maxWidth: "180px",
+        width: "180px",
+      
       }}
     >
-      <TableCell>{row.indicadores}</TableCell>
-      <TableCell align="center">{row.jan}</TableCell>
-      <TableCell align="center">{row.fev}</TableCell>
-      <TableCell align="center">{row.mar}</TableCell>
-      <TableCell align="center">{row.abr}</TableCell>
-      <TableCell align="center">{row.mai}</TableCell>
-      <TableCell align="center">{row.jun}</TableCell>
-      <TableCell align="center">{row.jul}</TableCell>
-      <TableCell align="center">{row.ago}</TableCell>
-      <TableCell align="center">{row.set}</TableCell>
-      <TableCell align="center">{row.out}</TableCell>
-
-      {/* Dados para Novembro */}
-      {["fieam", "sesi", "senai", "iel"].map((key) => (
-        <TableCell align="center" key={key}>
-          {row.nov && row.nov[key] !== undefined ? row.nov[key] : "-"}
+      Indicadores
+    </TableCell>
+    {["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"].map(
+      (month, index) => (
+        <TableCell
+          key={index}
+          rowSpan={2}
+          align="center"
+          style={{
+            fontWeight: "bold",
+            backgroundColor: "#ADD8E6",
+            padding: "8px",
+            minWidth: "60px",
+          }}
+        >
+          {month}
         </TableCell>
-      ))}
+      )
+    )}
+    <TableCell
+      colSpan={4}
+      align="center"
+      style={{
+        fontWeight: "bold",
+        backgroundColor: "#4682B4",
+        color: "white",
+        padding: "8px",
+      }}
+    >
+      Acumulado
+    </TableCell>
+  </TableRow>
+  <TableRow>
+    {["FIEAM", "SESI", "SENAI", "IEL"].map((name, index) => (
+      <TableCell
+        key={`acumulado-${index}`}
+        align="center"
+        style={{
+          fontWeight: "bold",
+          backgroundColor: "#4682B4",
+          color: "white",
+          padding: "8px",
+        }}
+      >
+        {name}
+      </TableCell>
+    ))}
+  </TableRow>
+</TableHead>
 
-      {/* Dados para Dezembro */}
-      {["fieam", "sesi", "senai", "iel"].map((key) => (
-        <TableCell align="center" key={key}>
-          {row.dez && row.dez[key] !== undefined ? row.dez[key] : "-"}
-        </TableCell>
-      ))}
-
-      <TableCell align="center">{row.acumulado}</TableCell>
-    </TableRow>
+<TableBody>
+  {Object.entries(groupedData).map(([category, rows]) => (
+    rows.map((row, rowIndex) => (
+      <TableRow
+        key={`${category}-${rowIndex}`}
+        sx={{
+          "& .MuiTableCell-root": {
+            padding: "4px 6px",
+            lineHeight: "1",
+          },
+          height: "30px",
+        }}
+      >
+        {rowIndex === 0 && (
+          <TableCell
+            rowSpan={rows.length}
+            align="center"
+            style={{
+              fontWeight: "bold",
+              verticalAlign: "middle",
+              transform: "rotate(-90deg)", 
+              textAlign: "center", 
+              minWidth: "25px", 
+              maxWidth: "25px",
+              width: "25px",
+              whiteSpace: "nowrap",
+              padding: "2px",
+              overflow: "hidden", 
+              
+            }}
+          >
+            {category}
+          </TableCell>
+        )}
+        <TableCell
+        style={{
+          fontWeight: "bold",
+          verticalAlign: "middle",
+          textAlign: "left", 
+          minWidth: "180px",
+          maxWidth: "180px",
+          width: "180px",
+          padding: "2px",
+        }}
+        >{row.indicadores}</TableCell>
+        {["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"].map((month) => (
+          <TableCell align="center" key={month}>
+            {typeof row[month] === "object"
+              ? Object.entries(row[month])
+                  .map(([key, value]) => `${key}: ${value}`)
+                  .join(", ")
+              : row[month] !== undefined
+              ? row[month]
+              : "-"}
+          </TableCell>
+        ))}
+        {["fieam", "sesi", "senai", "iel"].map((key) => (
+          <TableCell align="center" key={key}>
+            {row.acumulado && row.acumulado[key] !== undefined ? row.acumulado[key] : "-"}
+          </TableCell>
+        ))}
+      </TableRow>
+    ))
   ))}
 </TableBody>
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado em 27/11/2024</h4>
+      <h4>Atualizado até 27/11/2024</h4>
     </div>
   );
 };
-
 export default RedesSociais;
