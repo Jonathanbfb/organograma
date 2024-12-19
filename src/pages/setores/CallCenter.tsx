@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Paper,
@@ -10,31 +10,160 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  Tabs,
+  Tab,
+  Box,
 } from "@mui/material";
 
 const CallCenter: React.FC = () => {
   const navigate = useNavigate();
+  const [selectedYear, setSelectedYear] = useState("2024");
 
-  const data = [
-    { indicadores: "Nº de atendentes ativas", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 10, sesi:"-", senai: "-", iel: "-" },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 10 },
-    { indicadores: "Atendimentos receptivos Telefone", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 2734, sesi: "-", senai:"-", iel:"-" },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 2734 },
-    { indicadores: "Atendimentos receptivos WhatsApp", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 14250, sesi: "-", senai: "-", iel: "-" },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 14250 },
-    { indicadores: "Atendimentos receptivos Instagram", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 728, sesi: "-" , senai: "-", iel: "-" },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 728 },
-    { indicadores: "Atendimentos receptivos Facebook", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam:  95, sesi: "-", senai: "-", iel: "-" },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 95 },
-    { indicadores: "Atendimentos receptivos E-mail", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 22, sesi: "-", senai:"-", iel: "-" },dez: { fieam: "-", sesi:"-", senai: "-", iel: "-" }, acumulado: 22 },
-    { indicadores: "Atendimentos ativos Telefone", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 170, sesi: "-", senai: "-", iel: "-" },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 170 },
-    { indicadores: "Atendimentos ativos WhatsApp", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: "-", sesi: "-", senai: "-", iel: "-" },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 0 },
-    { indicadores: "Atendimentos ativos E-mail", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: "-", sesi: "-", senai: "-", iel: "-" },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 0 },
-    { indicadores: "Atendimentos ativos Eventos", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: "-", sesi: "-", senai: "-", iel: "-" },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 0 },
-     { indicadores: "Propostas geradas - Qtd", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: "-", sesi: 1700, senai: 128, iel: "-" },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 1828 },
-    { indicadores: "Propostas geradas - R$", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: "-", sesi: "R$ 3.555.795,00", senai: "R$ 182.793,10", iel: "-" },dez: { fieam:"-", sesi: "-", senai: "-", iel: "-" }, acumulado:  "R$ 3.738.588,10"  },
-   /* { indicadores: "Contas Alcançadas", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 34760, sesi: 329397, senai: 118503, iel: 81543 },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 564203 },
-    { indicadores: "Impressões", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 10473, sesi: 1590735, senai: 673674, iel: 15526 },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 2290408 },
-    { indicadores: "Interações (curtidas, engajamento, compartilhamento e salvamentos)", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 1219, sesi: 17014, senai: 5462, iel: 2291 },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 25986 },
-    { indicadores: "Taxa de engajamento", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 587, sesi: 6217, senai: 2954, iel: 1159 },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 10917 },
-    { indicadores: "Crescimento de Seguidores", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 243, sesi: 1563, senai: 563, iel: 180 },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 2549 },
-   */ ];
+  const data2024 = 
+  [
+    {
+      "indicadores": "Nº de atendentes ativas",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 10, "dez": "-",
+      "acumulado": { "fieam": 10, "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Atendimentos receptivos Telefone",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 2734, "dez": "-",
+      "acumulado": { "fieam": 2734, "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Atendimentos receptivos WhatsApp",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 14250, "dez": "-",
+      "acumulado": { "fieam": 14250, "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Atendimentos receptivos Instagram",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 728, "dez": "-",
+      "acumulado": { "fieam": 728, "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Atendimentos receptivos Facebook",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 95, "dez": "-",
+      "acumulado": { "fieam": 95, "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Atendimentos receptivos E-mail",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 22, "dez": "-",
+      "acumulado": { "fieam": 22, "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Atendimentos ativos Telefone",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 170, "dez": "-",
+      "acumulado": { "fieam": 170, "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Propostas geradas - Qtd",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 1828, "dez": "-",
+      "acumulado": { "fieam": "-", "sesi": 1700, "senai": 128, "iel": "-" }
+    },
+    {
+      "indicadores": "Propostas geradas - R$",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "R$ 3.738.588", "dez": "-",
+      "acumulado": { "fieam": "-", "sesi": "R$ 3.555.795", "senai": "R$ 182.793", "iel": "-" }
+    }
+  ]
   
+    
+
+  const data2025 = [
+    
+      {
+        "indicadores": "Nº de atendentes ativas",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Atendimentos receptivos Telefone",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Atendimentos receptivos WhatsApp",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Atendimentos receptivos Instagram",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Atendimentos receptivos Facebook",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Atendimentos receptivos E-mail",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Atendimentos ativos Telefone",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Propostas geradas - Qtd",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Propostas geradas - R$",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      }
+    ]
+    
+    
+  
+  
+
+  const categorizeIndicator = (indicator: string): string => {
+    const pagoIndicators = [
+      "Número de anúncios",
+      "Alcance total",
+      "Impressões (ADS)",
+      "Cliques no anúncio",
+      "CTR (Click-Through Rate)",
+      "CPC (Custo por Clique)",
+      "COM (Custo por Mil Impressões)",
+      "Conversões",
+      "Taxa de conversão (%)",
+      "CPA (Custo por Aquisição)",
+    ];
+  
+    const emailIndicators = [
+      
+     "Qtd de E-mails enviados",
+      "Taxa de abertura de e-mail",
+      
+    ];
+   const siteIndicators = ["Site - Visitantes únicos"];
+  
+    if (pagoIndicators.includes(indicator)) return "Pago";
+    if (emailIndicators.includes(indicator)) return "Email";
+    if (siteIndicators.includes(indicator)) return "Site";
+  
+    return "";
+  };
+
+  const handleTabChange = (event: React.SyntheticEvent, newValue: string) => {
+    setSelectedYear(newValue);
+  };
+
+  const data = selectedYear === "2024" ? data2024 : data2025;
+
+  const groupedData = data.reduce((acc, row) => {
+    const category = categorizeIndicator(row.indicadores);
+    if (!acc[category]) acc[category] = [];
+    acc[category].push(row);
+    return acc;
+  }, {});
 
   return (
     <div style={{ padding: "20px" }}>
@@ -46,167 +175,141 @@ const CallCenter: React.FC = () => {
       >
         Voltar
       </Button>
-
       <Typography variant="h4" gutterBottom>
-        Setor: Comercial
+        Setor: Call Center
       </Typography>
-
+      <Box sx={{ width: "100%", marginBottom: "20px" }}>
+        <Tabs
+          value={selectedYear}
+          onChange={handleTabChange}
+          textColor="secondary"
+          indicatorColor="secondary"
+          aria-label="Tabs de anos"
+        >
+          <Tab value="2024" label="2024" />
+          <Tab value="2025" label="2025" />
+        </Tabs>
+      </Box>
       <Paper sx={{ marginTop: "20px" }}>
         <TableContainer>
-            <Table>
-              <TableHead sx={{
-                      "& .MuiTableRow-root": {
-                        height: "30px", 
-                      },
-                      "& .MuiTableCell-root": {
-                        padding: "4px 6px", 
-                        lineHeight: "1",    
-                      },
-                    }}>
-                <TableRow>
-                <TableCell
-                  rowSpan={2}
-                  style={{
-                    fontWeight: "bold",
-                    backgroundColor: "#ADD8E6",
-                    padding: "8px",
-                    minWidth: "120px",
-                  }}
-                >
-                  Indicadores
-                </TableCell>
-                {["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out"].map((month, index) => (
-                  <TableCell
-                    key={index}
-                    rowSpan={2}
-                    align="center"
-                    style={{
-                      fontWeight: "bold",
-                      backgroundColor: "#ADD8E6",
-                      padding: "8px",
-                      minWidth: "60px",
-                    }}
-                  >
-                    {month}
-                  </TableCell>
-                ))}
-                <TableCell
-                  colSpan={4}
-                  align="center"
-                  style={{
-                    fontWeight: "bold",
-                    backgroundColor: "#4682B4",
-                    color: "white",
-                    padding: "8px",
-                  }}
-                >
-                  Nov
-                </TableCell>
-                <TableCell
-                  colSpan={4}
-                  align="center"
-                  style={{
-                    fontWeight: "bold",
-                    backgroundColor: "#4682B4",
-                    color: "white",
-                    padding: "8px",
-                  }}
-                >
-                  Dez
-                </TableCell>
-                <TableCell
-                  rowSpan={2}
-                  align="center"
-                  style={{
-                    fontWeight: "bold",
-                    backgroundColor: "#ADD8E6",
-                    padding: "8px",
-                    minWidth: "80px",
-                  }}
-                >
-                  Acumulado
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                {["FIEAM", "SESI", "SENAI", "IEL"].map((name, index) => (
-                  <TableCell
-                    key={`nov-${index}`}
-                    align="center"
-                    style={{
-                      fontWeight: "bold",
-                      backgroundColor: "#4682B4",
-                      color: "white",
-                      padding: "8px",
-                    }}
-                  >
-                    {name}
-                  </TableCell>
-                ))}
-                {["FIEAM", "SESI", "SENAI", "IEL"].map((name, index) => (
-                  <TableCell
-                    key={`dez-${index}`}
-                    align="center"
-                    style={{
-                      fontWeight: "bold",
-                      backgroundColor: "#4682B4",
-                      color: "white",
-                      padding: "8px",
-                    }}
-                  >
-                    {name}
-                  </TableCell>
-                ))}
-              </TableRow>
-            </TableHead>
+          <Table>
+          <TableHead>
+  <TableRow>
 
-            <TableBody>
-  {data.map((row, index) => (
-    <TableRow
-      key={index}
-      sx={{
-        "& .MuiTableCell-root": {
-          padding: "4px 6px",
-          lineHeight: "1",   
-        },
-        height: "30px",     
+    <TableCell
+      rowSpan={2}
+      style={{
+        fontWeight: "bold",
+        backgroundColor: "#ADD8E6",
+        padding: "2px",
+        textAlign: "center",
+        minWidth: "180px",
+        maxWidth: "180px",
+        width: "180px",
+      
       }}
     >
-      <TableCell>{row.indicadores}</TableCell>
-      <TableCell align="center">{row.jan}</TableCell>
-      <TableCell align="center">{row.fev}</TableCell>
-      <TableCell align="center">{row.mar}</TableCell>
-      <TableCell align="center">{row.abr}</TableCell>
-      <TableCell align="center">{row.mai}</TableCell>
-      <TableCell align="center">{row.jun}</TableCell>
-      <TableCell align="center">{row.jul}</TableCell>
-      <TableCell align="center">{row.ago}</TableCell>
-      <TableCell align="center">{row.set}</TableCell>
-      <TableCell align="center">{row.out}</TableCell>
-
-      {/* Dados para Novembro */}
-      {["fieam", "sesi", "senai", "iel"].map((key) => (
-        <TableCell align="center" key={key}>
-          {row.nov && row.nov[key] !== undefined ? row.nov[key] : "-"}
+      Indicadores
+    </TableCell>
+    {["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"].map(
+      (month, index) => (
+        <TableCell
+          key={index}
+          rowSpan={2}
+          align="center"
+          style={{
+            fontWeight: "bold",
+            backgroundColor: "#ADD8E6",
+            padding: "8px",
+            minWidth: "60px",
+          }}
+        >
+          {month}
         </TableCell>
-      ))}
+      )
+    )}
+    <TableCell
+      colSpan={4}
+      align="center"
+      style={{
+        fontWeight: "bold",
+        backgroundColor: "#4682B4",
+        color: "white",
+        padding: "8px",
+      }}
+    >
+      Acumulado
+    </TableCell>
+  </TableRow>
+  <TableRow>
+    {["FIEAM", "SESI", "SENAI", "IEL"].map((name, index) => (
+      <TableCell
+        key={`acumulado-${index}`}
+        align="center"
+        style={{
+          fontWeight: "bold",
+          backgroundColor: "#4682B4",
+          color: "white",
+          padding: "8px",
+        }}
+      >
+        {name}
+      </TableCell>
+    ))}
+  </TableRow>
+</TableHead>
 
-      {/* Dados para Dezembro */}
-      {["fieam", "sesi", "senai", "iel"].map((key) => (
-        <TableCell align="center" key={key}>
-          {row.dez && row.dez[key] !== undefined ? row.dez[key] : "-"}
-        </TableCell>
-      ))}
-
-      <TableCell align="center">{row.acumulado}</TableCell>
-    </TableRow>
+<TableBody>
+  {Object.entries(groupedData).map(([category, rows]) => (
+    rows.map((row, rowIndex) => (
+      <TableRow
+        key={`${category}-${rowIndex}`}
+        sx={{
+          "& .MuiTableCell-root": {
+            padding: "4px 6px",
+            lineHeight: "1",
+          },
+          height: "50px",
+          backgroundColor: rowIndex % 2 === 0 ? "#F5F5F5" : "#FFFFFF", // Alterna entre duas cores
+        }}
+      >
+        
+        <TableCell
+        style={{
+          fontWeight: "bold",
+          verticalAlign: "middle",
+          textAlign: "left", 
+          minWidth: "180px",
+          maxWidth: "180px",
+          width: "180px",
+          padding: "2px",
+        }}
+        >{row.indicadores}</TableCell>
+        {["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"].map((month) => (
+          <TableCell align="center" key={month}>
+            {typeof row[month] === "object"
+              ? Object.entries(row[month])
+                  .map(([key, value]) => `${key}: ${value}`)
+                  .join(", ")
+              : row[month] !== undefined
+              ? row[month]
+              : "-"}
+          </TableCell>
+        ))}
+        {["fieam", "sesi", "senai", "iel"].map((key) => (
+          <TableCell align="center" key={key}>
+            {row.acumulado && row.acumulado[key] !== undefined ? row.acumulado[key] : "-"}
+          </TableCell>
+        ))}
+      </TableRow>
+    ))
   ))}
 </TableBody>
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado em 06/12/2024</h4>
+      <h4>Atualizado até 27/11/2024</h4>
     </div>
   );
-
 };
 export default CallCenter;

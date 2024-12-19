@@ -213,7 +213,7 @@ const RedesSociais: React.FC = () => {
         Voltar
       </Button>
       <Typography variant="h4" gutterBottom>
-        Setor: Marketing
+        Setor: Redes Sociais
       </Typography>
       <Box sx={{ width: "100%", marginBottom: "20px" }}>
         <Tabs
@@ -322,7 +322,8 @@ Tipo
             padding: "4px 6px",
             lineHeight: "1",
           },
-          height: "30px",
+          height: "50px",
+          backgroundColor: rowIndex % 2 === 0 ? "#F5F5F5" : "#FFFFFF", // Alterna entre duas cores
         }}
       >
         {rowIndex === 0 && (

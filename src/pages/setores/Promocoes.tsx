@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Paper,
@@ -10,26 +10,132 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  Tabs,
+  Tab,
+  Box,
 } from "@mui/material";
 
 const Promocoes: React.FC = () => {
   const navigate = useNavigate();
+  const [selectedYear, setSelectedYear] = useState("2024");
 
-  const data = [
-    { indicadores: "Número de ações nas empresas", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: 14,dez: "-", acumulado: 14 },
-    { indicadores: "Número de eventos externos", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: 1,dez: "-", acumulado: 1},
-    { indicadores: "Qtd leads captados em ações nas empresas", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: 14,dez: "-", acumulado: 14},
-    { indicadores: "Qtd leads captados em eventos externos (feiras)", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: 182 ,dez: "-", acumulado: 182 },
-    { indicadores: "Nº de outdoors ativos por instituição", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: "-" },
-    { indicadores: "Nº de mobiliário urbano ativo, por instituição", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: "-" },
-   
-   /* { indicadores: "Contas Alcançadas", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 34760, sesi: 329397, senai: 118503, iel: 81543 },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 564203 },
-    { indicadores: "Impressões", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 10473, sesi: 1590735, senai: 673674, iel: 15526 },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 2290408 },
-    { indicadores: "Interações (curtidas, engajamento, compartilhamento e salvamentos)", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 1219, sesi: 17014, senai: 5462, iel: 2291 },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 25986 },
-    { indicadores: "Taxa de engajamento", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 587, sesi: 6217, senai: 2954, iel: 1159 },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 10917 },
-    { indicadores: "Crescimento de Seguidores", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: { fieam: 243, sesi: 1563, senai: 563, iel: 180 },dez: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, acumulado: 2549 },
-   */ ];
+  const data2024 = 
+  [
+    {
+      "indicadores": "Número de ações nas empresas",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 14, "dez": "-",
+      "acumulado": { "fieam": 14, "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Número de eventos externos",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 1, "dez": "-",
+      "acumulado": { "fieam": 1, "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Qtd leads captados em ações nas empresas",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 14, "dez": "-",
+      "acumulado": { "fieam": 14, "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Qtd leads captados em eventos externos (feiras)",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 182, "dez": "-",
+      "acumulado": { "fieam": 182, "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Nº de outdoors ativos por instituição",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Nº de mobiliário urbano ativo, por instituição",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    }
+  ]
   
+    
+
+  const data2025 = 
+    [
+      {
+        "indicadores": "Número de ações nas empresas",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 14, "dez": "-",
+        "acumulado": { "fieam": 14, "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Número de eventos externos",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 1, "dez": "-",
+        "acumulado": { "fieam": 1, "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Qtd leads captados em ações nas empresas",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 14, "dez": "-",
+        "acumulado": { "fieam": 14, "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Qtd leads captados em eventos externos (feiras)",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 182, "dez": "-",
+        "acumulado": { "fieam": 182, "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Nº de outdoors ativos por instituição",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Nº de mobiliário urbano ativo, por instituição",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      }
+    ]
+    
+    
+    
+  
+  
+
+  const categorizeIndicator = (indicator: string): string => {
+    const pagoIndicators = [
+      "Número de anúncios",
+      "Alcance total",
+      "Impressões (ADS)",
+      "Cliques no anúncio",
+      "CTR (Click-Through Rate)",
+      "CPC (Custo por Clique)",
+      "COM (Custo por Mil Impressões)",
+      "Conversões",
+      "Taxa de conversão (%)",
+      "CPA (Custo por Aquisição)",
+    ];
+  
+    const emailIndicators = [
+      
+     "Qtd de E-mails enviados",
+      "Taxa de abertura de e-mail",
+      
+    ];
+   const siteIndicators = ["Site - Visitantes únicos"];
+  
+    if (pagoIndicators.includes(indicator)) return "Pago";
+    if (emailIndicators.includes(indicator)) return "Email";
+    if (siteIndicators.includes(indicator)) return "Site";
+  
+    return "";
+  };
+
+  const handleTabChange = (event: React.SyntheticEvent, newValue: string) => {
+    setSelectedYear(newValue);
+  };
+
+  const data = selectedYear === "2024" ? data2024 : data2025;
+
+  const groupedData = data.reduce((acc, row) => {
+    const category = categorizeIndicator(row.indicadores);
+    if (!acc[category]) acc[category] = [];
+    acc[category].push(row);
+    return acc;
+  }, {});
+
   return (
     <div style={{ padding: "20px" }}>
       <Button
@@ -41,100 +147,140 @@ const Promocoes: React.FC = () => {
         Voltar
       </Button>
       <Typography variant="h4" gutterBottom>
-        Setor: Coordenação de Promoções e Propaganda
+        Setor: Promoções e Propaganda
       </Typography>
-
+      <Box sx={{ width: "100%", marginBottom: "20px" }}>
+        <Tabs
+          value={selectedYear}
+          onChange={handleTabChange}
+          textColor="secondary"
+          indicatorColor="secondary"
+          aria-label="Tabs de anos"
+        >
+          <Tab value="2024" label="2024" />
+          <Tab value="2025" label="2025" />
+        </Tabs>
+      </Box>
       <Paper sx={{ marginTop: "20px" }}>
         <TableContainer>
           <Table>
-            <TableHead sx={{
-      "& .MuiTableRow-root": {
-        height: "30px", 
-      },
-      "& .MuiTableCell-root": {
-        padding: "4px 6px", 
-        lineHeight: "1",    
-      },
-    }}>
-              <TableRow>
-                <TableCell
-                  rowSpan={2}
-                  style={{
-                    fontWeight: "bold",
-                    backgroundColor: "#ADD8E6",
-                    padding: "8px",
-                    minWidth: "120px",
-                  }}
-                >
-                  Indicadores
-                </TableCell>
-                {["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out","Nov","Dez"].map((month, index) => (
-                  <TableCell
-                    key={index}
-                    rowSpan={2}
-                    align="center"
-                    style={{
-                      fontWeight: "bold",
-                      backgroundColor: "#ADD8E6",
-                      padding: "8px",
-                      minWidth: "60px",
-                    }}
-                  >
-                    {month}
-                  </TableCell>
-                ))}
+          <TableHead>
+  <TableRow>
 
-                <TableCell
-                  rowSpan={2}
-                  align="center"
-                  style={{
-                    fontWeight: "bold",
-                    backgroundColor: "#ADD8E6",
-                    padding: "8px",
-                    minWidth: "80px",
-                  }}
-                >
-                  Acumulado
-                </TableCell>
-              </TableRow>
-             
-            </TableHead>
-
-            <TableBody>
-  {data.map((row, index) => (
-    <TableRow
-      key={index}
-      sx={{
-        "& .MuiTableCell-root": {
-          padding: "4px 6px",
-          lineHeight: "1",   
-        },
-        height: "30px",     
+    <TableCell
+      rowSpan={2}
+      style={{
+        fontWeight: "bold",
+        backgroundColor: "#ADD8E6",
+        padding: "2px",
+        textAlign: "center",
+        minWidth: "180px",
+        maxWidth: "180px",
+        width: "180px",
+      
       }}
     >
-      <TableCell>{row.indicadores}</TableCell>
-      <TableCell align="center">{row.jan}</TableCell>
-      <TableCell align="center">{row.fev}</TableCell>
-      <TableCell align="center">{row.mar}</TableCell>
-      <TableCell align="center">{row.abr}</TableCell>
-      <TableCell align="center">{row.mai}</TableCell>
-      <TableCell align="center">{row.jun}</TableCell>
-      <TableCell align="center">{row.jul}</TableCell>
-      <TableCell align="center">{row.ago}</TableCell>
-      <TableCell align="center">{row.set}</TableCell>
-      <TableCell align="center">{row.out}</TableCell>
-      <TableCell align="center">{row.nov}</TableCell>
-      <TableCell align="center">{row.dez}</TableCell>
-      <TableCell align="center">{row.acumulado}</TableCell>
-    </TableRow>
+      Indicadores
+    </TableCell>
+    {["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"].map(
+      (month, index) => (
+        <TableCell
+          key={index}
+          rowSpan={2}
+          align="center"
+          style={{
+            fontWeight: "bold",
+            backgroundColor: "#ADD8E6",
+            padding: "8px",
+            minWidth: "60px",
+          }}
+        >
+          {month}
+        </TableCell>
+      )
+    )}
+    <TableCell
+      colSpan={4}
+      align="center"
+      style={{
+        fontWeight: "bold",
+        backgroundColor: "#4682B4",
+        color: "white",
+        padding: "8px",
+      }}
+    >
+      Acumulado
+    </TableCell>
+  </TableRow>
+  <TableRow>
+    {["FIEAM", "SESI", "SENAI", "IEL"].map((name, index) => (
+      <TableCell
+        key={`acumulado-${index}`}
+        align="center"
+        style={{
+          fontWeight: "bold",
+          backgroundColor: "#4682B4",
+          color: "white",
+          padding: "8px",
+        }}
+      >
+        {name}
+      </TableCell>
+    ))}
+  </TableRow>
+</TableHead>
+
+<TableBody>
+  {Object.entries(groupedData).map(([category, rows]) => (
+    rows.map((row, rowIndex) => (
+      <TableRow
+        key={`${category}-${rowIndex}`}
+        sx={{
+          "& .MuiTableCell-root": {
+            padding: "4px 6px",
+            lineHeight: "1",
+          },
+          height: "50px",
+          backgroundColor: rowIndex % 2 === 0 ? "#F5F5F5" : "#FFFFFF", // Alterna entre duas cores
+        }}
+      >
+        
+        <TableCell
+        style={{
+          fontWeight: "bold",
+          verticalAlign: "middle",
+          textAlign: "left", 
+          minWidth: "180px",
+          maxWidth: "180px",
+          width: "180px",
+          padding: "2px",
+        }}
+        >{row.indicadores}</TableCell>
+        {["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"].map((month) => (
+          <TableCell align="center" key={month}>
+            {typeof row[month] === "object"
+              ? Object.entries(row[month])
+                  .map(([key, value]) => `${key}: ${value}`)
+                  .join(", ")
+              : row[month] !== undefined
+              ? row[month]
+              : "-"}
+          </TableCell>
+        ))}
+        {["fieam", "sesi", "senai", "iel"].map((key) => (
+          <TableCell align="center" key={key}>
+            {row.acumulado && row.acumulado[key] !== undefined ? row.acumulado[key] : "-"}
+          </TableCell>
+        ))}
+      </TableRow>
+    ))
   ))}
 </TableBody>
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado em 06/12/2024</h4>
+      <h4>Atualizado até 27/11/2024</h4>
     </div>
   );
-
 };
 export default Promocoes;
