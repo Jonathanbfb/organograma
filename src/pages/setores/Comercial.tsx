@@ -21,8 +21,8 @@ const Comercial: React.FC = () => {
   const [selectedYear, setSelectedYear] = useState("2024");
 
   const data2024 = [
-    { indicadores: "Qtd. profissional ativo", jan: "5", fev: "5", mar: "5", abr: "6", mai: "5", jun: "5", jul: "5", ago: "6", set: "5", out: "6", "nov": 10,"dez": "8","acumulado": { "fieam": 5.9, "sesi": "-", "senai": "-", "iel": "-" } },
-    { indicadores: "Qtd. horas de trabalho", "jan": 880,
+    { indicadores: "Qtd. profissionais ativos no mês", jan: "13", fev: "15", mar: "13", abr: "15", mai: "15", jun: "13", jul: "14", ago: "15", set: "14", out: "13", "nov": 10,"dez": "8","acumulado": { "fieam": 5.9, "sesi": "-", "senai": "-", "iel": "-" } },
+    { indicadores: "Qtd. horas de trabalhadas no setor", "jan": 880,
   "fev": 880,
   "mar": 880,
   "abr": 1056,
@@ -34,27 +34,9 @@ const Comercial: React.FC = () => {
   "out": 1056,
   "nov": 1760,
   "dez": 1408, acumulado: { fieam: "1041", sesi: "-", senai: "-", iel: "-" } },
-    { indicadores: "Total de ações executadas", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "252",dez: "-", acumulado: { fieam: "252", sesi: "-", senai: "-", iel: "-" } },
+    { indicadores: "Total de ações executadas no mês", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "252",dez: "-", acumulado: { fieam: "252", sesi: "-", senai: "-", iel: "-" } },
     { indicadores: "Tempo médio por ação executada", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "6.98",dez: "-", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, },
-         
-    /* {
-        "indicadores": "Número de consultoras ativas por mês",
-        "jan": "-",
-        "fev": "-",
-        "mar": "-",
-        "abr": "-",
-        "mai": "-",
-        "jun": "-",
-        "jul": "-",
-        "ago": "-",
-        "set": "-",
-        "out": "-",
-        "nov": 9,
-        "dez": "-",
-        "acumulado": { "fieam": 9, "sesi": "-", "senai": "-", "iel": "-" }
-      },
-      */
-      {
+    {
         "indicadores": "Nº de visitas realizadas",
         "jan": "-",
         "fev": "-",
@@ -71,7 +53,7 @@ const Comercial: React.FC = () => {
         "acumulado": { "fieam": 39, "sesi": "-", "senai": "-", "iel": "-" }
       }, 
       {
-        "indicadores": "Proposta Gerada - Qtd",
+        "indicadores": "Propostas geradas - Qtd",
         "jan": 131,
         "fev": 91,
         "mar": 116,
@@ -91,7 +73,7 @@ const Comercial: React.FC = () => {
           "iel": 116
         }},
         {
-          "indicadores": "Proposta Gerada - R$",
+          "indicadores": "Propostas geradas - R$",
           "jan": "R$ 1.106.970",
           "fev": "R$ 1.566.590",
           "mar": "R$ 742.618",
@@ -112,7 +94,7 @@ const Comercial: React.FC = () => {
           }
         },
       {
-        "indicadores": "Proposta fechados - Qtd",
+        "indicadores": "Propostas fechadas - Qtd",
         "jan": "-",
         "fev": "-",
         "mar": "-",
@@ -128,7 +110,7 @@ const Comercial: React.FC = () => {
         "acumulado": { "fieam": "-", "sesi": 42, "senai": 14, "iel": 6 }
       },
       {
-        "indicadores": "Proposta fechados - R$",
+        "indicadores": "Propostas fechadas - R$",
         "jan": "-",
         "fev": "-",
         "mar": "-",
@@ -217,36 +199,15 @@ const Comercial: React.FC = () => {
           "iel": 20
         }
       }
-    
-    
-      
-      
   ];
 
   const data2025 = [
       
-    { indicadores: "Qtd. profissional ativo", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", "nov":"-","dez": "-","acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" } },
-    { indicadores: "Qtd. horas de trabalho", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" } },
-    { indicadores: "Total de ações executadas", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" } },
+    { indicadores: "Qtd. profissionais ativos no mês", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", "nov":"-","dez": "-","acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" } },
+    { indicadores: "Qtd. horas de trabalhadas no setor", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" } },
+    { indicadores: "Total de ações executadas no mês", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" } },
     { indicadores: "Tempo médio por ação executada", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, },
-      
-   /*  {
-        "indicadores": "Número de consultoras ativas por mês",
-        "jan": "-",
-        "fev": "-",
-        "mar": "-",
-        "abr": "-",
-        "mai": "-",
-        "jun": "-",
-        "jul": "-",
-        "ago": "-",
-        "set": "-",
-        "out": "-",
-        "nov": "-",
-        "dez": "-",
-        "acumulado": "-"
-      }, */
-      {
+            {
         "indicadores": "Nº de visitas realizadas",
         "jan": "-",
         "fev": "-",
@@ -295,7 +256,7 @@ const Comercial: React.FC = () => {
         "acumulado": "-"
       },
       {
-        "indicadores": "Proposta fechados - Qtd",
+        "indicadores": "Propostas fechadas - Qtd",
         "jan": "-",
         "fev": "-",
         "mar": "-",
@@ -311,7 +272,7 @@ const Comercial: React.FC = () => {
         "acumulado": "-"
       },
       {
-        "indicadores": "Proposta fechados - R$",
+        "indicadores": "Propostas fechadas - R$",
         "jan": "-",
         "fev": "-",
         "mar": "-",
@@ -391,10 +352,6 @@ const Comercial: React.FC = () => {
         "acumulado": "-"
       }
     ]
-    
-  
-  
-
   const categorizeIndicator = (indicator: string): string => {
     const pagoIndicators = [
       "Número de anúncios",
@@ -469,7 +426,7 @@ const Comercial: React.FC = () => {
               </div>
             </div>
           </div>
-      <Box sx={{ width: "100%", marginBottom: "20px" }}>
+       <Box sx={{ width: "100%", marginBottom: "20px" }}>
         <Tabs
           value={selectedYear}
           onChange={handleTabChange}

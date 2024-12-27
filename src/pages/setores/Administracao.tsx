@@ -13,14 +13,41 @@ import {
   Tabs,
   Tab,
   Box,
+  Tooltip,
 } from "@mui/material";
 
 const Administracao: React.FC = () => {
   const navigate = useNavigate();
   const [selectedYear, setSelectedYear] = useState("2024");
 
+  const handlePrint = () => {
+    window.print();
+  };
+
   const data2024 = 
   [
+    {
+      "indicadores": "Qtd. profissionais ativos no mês",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Qtd. de horas trabalhadas no setor",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Total de ações executadas no mês",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+   
+    {
+      "indicadores": "Tempo médio por ação executada",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    }, 
+
     {
       "indicadores": "Número de demandas de ajustes de ponto",
       "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "20", "dez": "-",
@@ -61,6 +88,28 @@ const Administracao: React.FC = () => {
     
 
   const data2025 = [
+    
+    {
+      "indicadores": "Qtd. profissionais ativos no mês",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Qtd. de horas trabalhadas no setor",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Total de ações executadas no mês",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+   
+    {
+      "indicadores": "Tempo médio por ação executada",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    }, 
     {
       "indicadores": "Número de demandas de ajustes de ponto",
       "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
@@ -146,17 +195,31 @@ const Administracao: React.FC = () => {
 
   return (
     <div style={{ padding: "20px" }}>
-      <Button
-        variant="contained"
-        color="primary"
-        onClick={() => navigate("/organograma")}
-        style={{ marginBottom: "20px" }}
-      >
-        Voltar
-      </Button>
-      <Typography variant="h4" gutterBottom>
-        Setor: Administrativo
-      </Typography>
+     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <Typography variant="h4" gutterBottom>
+                Setor: Administrativo
+              </Typography>
+              <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                <Tooltip title="Voltar para o menu principal">
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={() => navigate("/organograma")}
+                    style={{ marginBottom: "20px" }}
+                  >
+                    Voltar
+                  </Button>
+                </Tooltip>
+                <Button
+                  variant="contained"
+                  color="inherit"
+                  onClick={handlePrint}
+                  style={{ marginBottom: "20px", marginLeft: "10px" }}
+                >
+                  Imprimir
+                </Button>
+              </div>
+            </div>
       <Box sx={{ width: "100%", marginBottom: "20px" }}>
         <Tabs
           value={selectedYear}

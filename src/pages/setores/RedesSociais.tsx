@@ -13,6 +13,7 @@ import {
   Tabs,
   Tab,
   Box,
+  Tooltip,
 } from "@mui/material";
 
 const RedesSociais: React.FC = () => {
@@ -21,7 +22,27 @@ const RedesSociais: React.FC = () => {
 
   const data2024 = [
     
-      
+    {
+      "indicadores": "Qtd. profissionais ativos no mês",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Qtd. de horas trabalhadas no setor",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Total de ações executadas no mês",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+   
+    {
+      "indicadores": "Tempo médio por ação executada",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    }, 
         {
           "indicadores": "Número de anúncios",
           "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 195,
@@ -86,12 +107,62 @@ const RedesSociais: React.FC = () => {
           "indicadores": "Site - Visitantes únicos",
           "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 210,
           "acumulado": { "fieam": 210, "sesi": 0, "senai": 0, "iel": 0 }
-        }
-      
-      
-  ];
+        },
+        {
+          "indicadores": "Publicação nas redes sociais",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+          "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        },
+    {
+          "indicadores": "Resposta de comentários nas redes sociais",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+          "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        },
+        {
+          "indicadores": "Contas Alcançadas",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+          "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        },
+        {
+          "indicadores": "Interações",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+          "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        },
+    {
+          "indicadores": "Taxa de Engajamento",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+          "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        }, 
+       
+        {
+          "indicadores": "Seguidores",
+          "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+          "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        }, 
+        ];
 
   const data2025 = [
+    {
+      "indicadores": "Qtd. profissionais ativos no mês",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Qtd. de horas trabalhadas no setor",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Total de ações executadas no mês",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+   
+    {
+      "indicadores": "Tempo médio por ação executada",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    }, 
     {
       "indicadores": "Número de anúncios",
       "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
@@ -156,7 +227,37 @@ const RedesSociais: React.FC = () => {
       "indicadores": "Site - Visitantes únicos",
       "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
-    }
+    },
+    {
+      "indicadores": "Publicação nas redes sociais",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+{
+      "indicadores": "Resposta de comentários nas redes sociais",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Contas Alcançadas",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Interações",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+{
+      "indicadores": "Taxa de Engajamento",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    }, 
+    {
+      "indicadores": "Seguidores",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    }, 
   ]
   
 
@@ -180,13 +281,25 @@ const RedesSociais: React.FC = () => {
       "Taxa de abertura de e-mail",
       
     ];
+
+    const OrganicoIndicators = [
+      
+"Seguidores",
+"Taxa de Engajamento",
+"Interações",
+"Contas Alcançadas",
+"Resposta de comentários nas redes sociais",
+"Publicação nas redes sociais"
+       
+     ];
    const siteIndicators = ["Site - Visitantes únicos"];
   
     if (pagoIndicators.includes(indicator)) return "Pago";
     if (emailIndicators.includes(indicator)) return "Email";
     if (siteIndicators.includes(indicator)) return "Site";
+    if (OrganicoIndicators.includes(indicator)) return "Orgânico";
   
-    return "Outro";
+    return " ";
   };
 
   const handleTabChange = (event: React.SyntheticEvent, newValue: string) => {
@@ -194,6 +307,10 @@ const RedesSociais: React.FC = () => {
   };
 
   const data = selectedYear === "2024" ? data2024 : data2025;
+
+  const handlePrint = () => {
+    window.print();
+  };
 
   const groupedData = data.reduce((acc, row) => {
     const category = categorizeIndicator(row.indicadores);
@@ -204,17 +321,31 @@ const RedesSociais: React.FC = () => {
 
   return (
     <div style={{ padding: "20px" }}>
-      <Button
-        variant="contained"
-        color="primary"
-        onClick={() => navigate("/organograma")}
-        style={{ marginBottom: "20px" }}
-      >
-        Voltar
-      </Button>
-      <Typography variant="h4" gutterBottom>
-        Setor: Redes Sociais
-      </Typography>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <Typography variant="h4" gutterBottom>
+                Setor: Redes Sociais
+              </Typography>
+              <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                <Tooltip title="Voltar para o menu principal">
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={() => navigate("/organograma")}
+                    style={{ marginBottom: "20px" }}
+                  >
+                    Voltar
+                  </Button>
+                </Tooltip>
+                <Button
+                  variant="contained"
+                  color="inherit"
+                  onClick={handlePrint}
+                  style={{ marginBottom: "20px", marginLeft: "10px" }}
+                >
+                  Imprimir
+                </Button>
+              </div>
+            </div>
       <Box sx={{ width: "100%", marginBottom: "20px" }}>
         <Tabs
           value={selectedYear}
@@ -340,7 +471,7 @@ Tipo
               width: "25px",
               whiteSpace: "nowrap",
               padding: "2px",
-              overflow: "hidden", 
+              //overflow: "hidden", 
               
             }}
           >

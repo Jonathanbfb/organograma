@@ -63,15 +63,15 @@ const Organograma: React.FC = () => {
           style={styles.botao}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
-          onClick={() => alert("Oi, Eu sou o Paulo Pereira, como posso te ajudar?")}
+          onClick={() => alert("Indicadores Geral do setor, EM BREVE")}
         >
          {/* // <FaUserTie style={styles.icone} /> */}
           <div style={{ textAlign: "center", lineHeight: "1.2" }}>
             <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
-              Diretor de Marketing
+              Diretoria de Marketing
             </h3>
             <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
-              Paulo Pereira
+              Diretor: Paulo Pereira
             </h4>
           </div>
         </button>
@@ -79,23 +79,8 @@ const Organograma: React.FC = () => {
 
       {/* Nível 2 */}
       <div style={styles.nivel}>
-        <button
-          style={styles.botao}
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-          onClick={() => handleNavigate("/setor/Marketing")}
-        >
-         {/* // <FaBullhorn style={styles.icone} /> */}
-          <div style={{ textAlign: "center", lineHeight: "1.2" }}>
-            <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
-              Supervisão de Marketing
-            </h3>
-            <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
-              Renata Nascimento
-            </h4>
-          </div>
-        </button>
-        <button
+
+      <button
           style={styles.botao}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
@@ -104,29 +89,14 @@ const Organograma: React.FC = () => {
          {/* // <FaChartBar style={styles.icone} /> */}
           <div style={{ textAlign: "center", lineHeight: "1.2" }}>
             <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
-              Supervisão Comercial
+              Setor Comercial
             </h3>
             <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
-              Adriana Dabela
+             Supervisora: Adriana Dabela
             </h4>
           </div>
         </button>
-        <button
-          style={styles.botao}
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-          onClick={() => handleNavigate("/setor/Design")}
-        >
-         {/* // <FaPalette style={styles.icone} /> */}
-          <div style={{ textAlign: "center", lineHeight: "1.2" }}>
-            <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
-              Supervisão de Design
-            </h3>
-            <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
-              Mary Martins
-            </h4>
-          </div>
-        </button>
+
         <button
           style={styles.botao}
           onMouseOver={handleMouseOver}
@@ -136,13 +106,48 @@ const Organograma: React.FC = () => {
           {/* //<FaPhoneAlt style={styles.icone} /> */}
           <div style={{ textAlign: "center", lineHeight: "1.2" }}>
             <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
-              Supervisão de Call Center
+              Setor Call Center
             </h3>
             <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
-              Ariana Costa
+              Supervisora: Ariana Costa
             </h4>
           </div>
         </button>
+        
+        <button
+          style={styles.botao}
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          onClick={() => handleNavigate("/setor/Marketing")}
+        >
+         {/* // <FaBullhorn style={styles.icone} /> */}
+          <div style={{ textAlign: "center", lineHeight: "1.2" }}>
+            <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
+              Setor de Marketing
+            </h3>
+            <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
+              Supervisora: Renata Nascimento
+            </h4>
+          </div>
+        </button>
+        
+        <button
+          style={styles.botao}
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          onClick={() => handleNavigate("/setor/Design")}
+        >
+         {/* // <FaPalette style={styles.icone} /> */}
+          <div style={{ textAlign: "center", lineHeight: "1.2" }}>
+            <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
+              Setor de Design
+            </h3>
+            <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
+              Supervisora: Mary Martins
+            </h4>
+          </div>
+        </button>
+       
       </div>
       {/* Nível 3 */}
       <div style={styles.nivel}>
@@ -155,10 +160,10 @@ const Organograma: React.FC = () => {
          {/* // <FaBuilding style={styles.icone} /> */}
           <div style={{ textAlign: "center", lineHeight: "1.2" }}>
             <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
-              Coordenação Administrativa
+              Setor Administrativo
             </h3>
             <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
-              Edivalda Martins
+              Coordenadora: Edivalda Martins
             </h4>
           </div>
         </button>
@@ -171,7 +176,7 @@ const Organograma: React.FC = () => {
          {/* // <FaStore style={styles.icone} /> */}
           <div style={{ textAlign: "center", lineHeight: "1.2" }}>
             <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
-              Coordenação de Pesquisa de Mercado
+              Setor Pesquisa de Mercado
             </h3>
             <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
               .
@@ -187,10 +192,10 @@ const Organograma: React.FC = () => {
          {/* // <FaFacebook style={styles.icone} /> */}
           <div style={{ textAlign: "center", lineHeight: "1.2" }}>
             <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
-              Coordenação de Redes Sociais
+              Setor Redes Sociais
             </h3>
             <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
-              Diego Nobre
+              Coordenador: Diego Nobre
             </h4>
           </div>
         </button>
@@ -203,10 +208,10 @@ const Organograma: React.FC = () => {
           {/* //<FaBrain style={styles.icone} /> */}
           <div style={{ textAlign: "center", lineHeight: "1.2" }}>
             <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
-              Coordenação de Inteligência de Mercado
+              Setor Inteligência de Mercado
             </h3>
             <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
-              Lidiane Laborda
+              Coordenadora: Lidiane Laborda
             </h4>
           </div>
         </button>
@@ -219,10 +224,10 @@ const Organograma: React.FC = () => {
          {/* // <FaAd style={styles.icone} /> */}
           <div style={{ textAlign: "center", lineHeight: "1.2" }}>
             <h3 style={{ fontWeight: "bold", margin: "5px 0", fontSize: "24px" }}>
-              Coordenação de Promoções e Propaganda
+              Setor Promoções e Propaganda
             </h3>
             <h4 style={{ fontWeight: "normal", margin: "5px 0", fontSize: "16px" }}>
-              Etienne Lopes
+              Coordenadora: Etienne Lopes
             </h4>
           </div>
         </button>

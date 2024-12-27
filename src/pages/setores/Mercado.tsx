@@ -13,6 +13,7 @@ import {
   Tabs,
   Tab,
   Box,
+  Tooltip,
 } from "@mui/material";
 
 const Mercado: React.FC = () => {
@@ -21,6 +22,29 @@ const Mercado: React.FC = () => {
 
   const data2024 = 
   [
+
+    {
+      "indicadores": "Qtd. profissionais ativos no mês",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Qtd. de horas trabalhadas no setor",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+    {
+      "indicadores": "Total de ações executadas no mês",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    },
+   
+    {
+      "indicadores": "Tempo médio por ação executada",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    }, 
+
     {
       "indicadores": "Nº de projetos em andamento",
       "jan": "-",
@@ -212,6 +236,29 @@ const Mercado: React.FC = () => {
     }
   ]
     const data2025 = [
+
+      {
+        "indicadores": "Qtd. profissionais ativos no mês",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Qtd. de horas trabalhadas no setor",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      },
+      {
+        "indicadores": "Total de ações executadas no mês",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      },
+     
+      {
+        "indicadores": "Tempo médio por ação executada",
+        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      }, 
+  
     {
       "indicadores": "Nº de projetos em andamento",
       "jan": "-",
@@ -224,13 +271,13 @@ const Mercado: React.FC = () => {
       "ago": "-",
       "set": "-",
       "out": "-",
-      "nov": "6",
-      "dez": "2",
+      "nov": "-",
+      "dez": "-",
       "acumulado": {
         "fieam": "-",
         "sesi": "-",
         "senai": "-",
-        "iel": "8"
+        "iel": "-"
       }
     },
     {
@@ -266,11 +313,11 @@ const Mercado: React.FC = () => {
       "ago": "-",
       "set": "-",
       "out": "-",
-      "nov": "1",
+      "nov": "-",
       "dez": "-",
       "acumulado": {
         "fieam": "-",
-        "sesi": "1",
+        "sesi": "-",
         "senai": "-",
         "iel": "-"
       }
@@ -287,11 +334,11 @@ const Mercado: React.FC = () => {
       "ago": "-",
       "set": "-",
       "out": "-",
-      "nov": "1",
-      "dez": "1",
+      "nov": "-",
+      "dez": "-",
       "acumulado": {
         "fieam": "-",
-        "sesi": "2",
+        "sesi": "-",
         "senai": "-",
         "iel": "-"
       }
@@ -308,11 +355,11 @@ const Mercado: React.FC = () => {
       "ago": "-",
       "set": "-",
       "out": "-",
-      "nov": "2",
+      "nov": "-",
       "dez": "-",
       "acumulado": {
         "fieam": "-",
-        "sesi": "2",
+        "sesi": "-",
         "senai": "-",
         "iel": "-"
       }
@@ -371,13 +418,13 @@ const Mercado: React.FC = () => {
       "ago": "-",
       "set": "-",
       "out": "-",
-      "nov": "2",
+      "nov": "-",
       "dez": "-",
       "acumulado": {
         "fieam": "-",
         "sesi": "-",
         "senai": "-",
-        "iel": "2"
+        "iel": "-"
       }
     },
     {
@@ -393,18 +440,15 @@ const Mercado: React.FC = () => {
       "set": "-",
       "out": "-",
       "nov": "-",
-      "dez": "1",
+      "dez": "-",
       "acumulado": {
         "fieam": "-",
         "sesi": "-",
         "senai": "-",
-        "iel": "1"
+        "iel": "-"
       }
     }
-  ]
-  
-    
-    
+  ]  
   
   
 
@@ -447,6 +491,8 @@ const Mercado: React.FC = () => {
 
   const data = selectedYear === "2024" ? data2024 : data2025;
 
+
+
   const groupedData = data.reduce((acc, row) => {
     const category = categorizeIndicator(row.indicadores);
     if (!acc[category]) acc[category] = [];
@@ -456,25 +502,31 @@ const Mercado: React.FC = () => {
 
   return (
     <div style={{ padding: "20px" }}>
-      <Button
-        variant="contained"
-        color="primary"
-        onClick={() => navigate("/organograma")}
-        style={{ marginBottom: "20px" }}
-      >
-        Voltar
-      </Button>
-      <Button
-        variant="contained"
-        color="inherit"
-      onClick={handlePrint}
-        style={{ marginBottom: "20px", marginLeft: "10px",alignItems:"start" }}
-      >
-        Imprimir
-      </Button>
-      <Typography variant="h4" gutterBottom>
-        Setor: Inteligência de Mercado
-      </Typography>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <Typography variant="h4" gutterBottom>
+                Setor: Inteligência de Mercado
+              </Typography>
+              <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                <Tooltip title="Voltar para o menu principal">
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={() => navigate("/organograma")}
+                    style={{ marginBottom: "20px" }}
+                  >
+                    Voltar
+                  </Button>
+                </Tooltip>
+                <Button
+                  variant="contained"
+                  color="inherit"
+                  onClick={handlePrint}
+                  style={{ marginBottom: "20px", marginLeft: "10px" }}
+                >
+                  Imprimir
+                </Button>
+              </div>
+            </div>
       <Box sx={{ width: "100%", marginBottom: "20px" }}>
         <Tabs
           value={selectedYear}
