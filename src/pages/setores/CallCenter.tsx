@@ -24,52 +24,52 @@ const CallCenter: React.FC = () => {
   [
     {
       "indicadores": "Qtd. profissionais ativos no mês",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "10",
-      "acumulado": { "fieam": "10", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 10,"dez": 10,
+      "acumulado": { "fieam": "20", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 1600,"dez": 1360,
+      "acumulado": { "fieam": 2960, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Total de ações executadas no mês",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Tempo médio por ação executada",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     }, 
     {
       "indicadores": "Atendimentos receptivos Telefone",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 2734, "dez": "-",
-      "acumulado": { "fieam": 2734, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 2.563, "dez": 991,
+      "acumulado": { "fieam": 3.554, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Atendimentos receptivos WhatsApp",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 14250, "dez": "-",
-      "acumulado": { "fieam": 14250, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 14.250, "dez": 12.579,
+      "acumulado": { "fieam": 26.829, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Atendimentos receptivos Instagram",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 728, "dez": "-",
-      "acumulado": { "fieam": 728, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 728, "dez": 657,
+      "acumulado": { "fieam": 1.385, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Atendimentos receptivos Facebook",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 95, "dez": "-",
-      "acumulado": { "fieam": 95, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 95, "dez": 68,
+      "acumulado": { "fieam": 163, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Atendimentos receptivos E-mail",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 22, "dez": "-",
-      "acumulado": { "fieam": 22, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 22, "dez": 41,
+      "acumulado": { "fieam": 63, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Atendimentos ativos Telefone",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 170, "dez": "-",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 170, "dez": 0,
       "acumulado": { "fieam": 170, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
@@ -256,8 +256,7 @@ const CallCenter: React.FC = () => {
         minWidth: "180px",
         maxWidth: "180px",
         width: "180px",
-      
-      }}
+        }}
     >
       Indicadores
     </TableCell>
@@ -358,7 +357,7 @@ const CallCenter: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/11/2024</h4>
+      <h4>Atualizado até 03/01/2024</h4>
     </div>
   );
 };

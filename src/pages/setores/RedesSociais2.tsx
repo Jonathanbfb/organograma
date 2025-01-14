@@ -11,9 +11,6 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
-import Box from "@mui/material/Box";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
 
 const RedesSociais: React.FC = () => {
   const navigate = useNavigate();

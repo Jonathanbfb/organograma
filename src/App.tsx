@@ -13,6 +13,7 @@ import Mercado from "./pages/setores/Mercado";
 import Promocoes from "./pages/setores/Promocoes";
 import Organograma from "./pages/organograma.tsx";
 import Dashboard from "./pages/Dashboard.tsx";
+import Geral from "./pages/setores/Geral.tsx";
 
 interface User {
   username: string;
@@ -74,6 +75,7 @@ const App: React.FC = () => {
         <Route path="/setor/Redes Sociais" element={<RedesSociais />} />
         <Route path="/setor/Mercado" element={<Mercado />} />
         <Route path="/setor/Promoções" element={<Promocoes />} />
+        <Route path="/setor/Geral" element={<Geral />} />
       </Routes>
     </Router>
   );

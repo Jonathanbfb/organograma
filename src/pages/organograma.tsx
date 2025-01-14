@@ -63,7 +63,7 @@ const Organograma: React.FC = () => {
           style={styles.botao}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
-          onClick={() => alert("Indicadores Geral do setor, EM BREVE")}
+          onClick={() => handleNavigate("/setor/Geral")}
         >
          {/* // <FaUserTie style={styles.icone} /> */}
           <div style={{ textAlign: "center", lineHeight: "1.2" }}>
