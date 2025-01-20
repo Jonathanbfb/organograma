@@ -18,7 +18,7 @@ import {
 
 const Marketing: React.FC = () => {
   const navigate = useNavigate();
-  const [selectedYear, setSelectedYear] = useState("2024");
+  const [selectedYear, setSelectedYear] = useState("2025");
 
   const data2024 = [
     { indicadores: "Qtd. profissionais ativos no mês", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-", dez: "-", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" } },

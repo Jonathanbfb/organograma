@@ -11,7 +11,7 @@ import Pesquisa from "./pages/setores/Pesquisa";
 import RedesSociais from "./pages/setores/RedesSociais";
 import Mercado from "./pages/setores/Mercado";
 import Promocoes from "./pages/setores/Promocoes";
-import Organograma from "./pages/organograma.tsx";
+import Organograma from "./pages/setores/components/organograma.tsx";
 import Dashboard from "./pages/Dashboard.tsx";
 import Geral from "./pages/setores/Geral.tsx";
 

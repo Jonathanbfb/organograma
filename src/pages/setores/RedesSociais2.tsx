@@ -267,14 +267,15 @@ const RedesSociais: React.FC = () => {
       {/* Dados para Novembro */}
       {["fieam", "sesi", "senai", "iel"].map((key) => (
         <TableCell align="center" key={key}>
-          {row.nov && row.nov[key] !== undefined ? row.nov[key] : "-"}
+  
+          {row.nov && typeof row.nov === "object" && key in row.nov ? row.nov[key as keyof typeof row.nov] : "-"}
         </TableCell>
       ))}
 
       {/* Dados para Dezembro */}
       {["fieam", "sesi", "senai", "iel"].map((key) => (
         <TableCell align="center" key={key}>
-          {row.dez && row.dez[key] !== undefined ? row.dez[key] : "-"}
+          {row.dez && typeof row.dez === "object" && key in row.dez ? row.dez[key as keyof typeof row.dez] : "-"}
         </TableCell>
       ))}
 

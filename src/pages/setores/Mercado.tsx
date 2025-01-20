@@ -18,7 +18,7 @@ import {
 
 const Mercado: React.FC = () => {
   const navigate = useNavigate();
-  const [selectedYear, setSelectedYear] = useState("2024");
+  const [selectedYear, setSelectedYear] = useState("2025");
 
   const data2024 = 
   [

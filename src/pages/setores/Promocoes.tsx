@@ -18,35 +18,57 @@ import {
 
 const Promocoes: React.FC = () => {
   const navigate = useNavigate();
-  const [selectedYear, setSelectedYear] = useState("2024");
+  const [selectedYear, setSelectedYear] = useState("2025");
+
+  type RowData = {
+    indicadores: string;
+    jan?: string | number;
+    fev?: string | number;
+    mar?: string | number;
+    abr?: string | number;
+    mai?: string | number;
+    jun?: string | number;
+    jul?: string | number;
+    ago?: string | number;
+    set?: string | number;
+    out?: string | number;
+    nov?: string | number;
+    dez?: string | number;
+    acumulado: {
+      fieam?: string | number;
+      sesi?: string | number;
+      senai?: string | number;
+      iel?: string | number;
+    };
+  };
+  
 
   const data2024 = 
   [
     {
       "indicadores": "Qtd. profissionais ativos no mês",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez":3,
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez":"-",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Total de ações executadas no mês",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez":"-",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     },
-   
     {
       "indicadores": "Tempo médio por ação executada",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez":"-",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     }, 
     {
       "indicadores": "Número de ações nas empresas",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 14, "dez": "-",
-      "acumulado": { "fieam": 14, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 14, "dez": 21,
+      "acumulado": { "fieam": 35, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Número de eventos externos",
@@ -78,43 +100,42 @@ const Promocoes: React.FC = () => {
     [
       {
         "indicadores": "Qtd. profissionais ativos no mês",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 3, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
+        "acumulado": { "fieam": 3, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Qtd. de horas trabalhadas no setor",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "jan": 528, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
         "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Total de ações executadas no mês",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "jan": 0, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
         "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
       },
-     
       {
         "indicadores": "Tempo médio por ação executada",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "jan": 0, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
         "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
       }, 
       {
         "indicadores": "Número de ações nas empresas",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 1, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 1, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Número de eventos externos",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "jan": 0, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
         "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Qtd leads captados em ações nas empresas",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 10, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 10, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Qtd leads captados em eventos externos (feiras)",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "jan": 0, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
         "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
@@ -128,13 +149,7 @@ const Promocoes: React.FC = () => {
         "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
       }
     ]
-    
-    
-    
-  
-  
-
-  const categorizeIndicator = (indicator: string): string => {
+    const categorizeIndicator = (indicator: string): string => {
     const pagoIndicators = [
       "Número de anúncios",
       "Alcance total",
@@ -173,7 +188,7 @@ const Promocoes: React.FC = () => {
     window.print();
   };
 
-  const groupedData = data.reduce((acc, row) => {
+  const groupedData = data.reduce<Record<string, typeof data2024>>((acc, row) => {
     const category = categorizeIndicator(row.indicadores);
     if (!acc[category]) acc[category] = [];
     acc[category].push(row);
@@ -314,22 +329,25 @@ const Promocoes: React.FC = () => {
           padding: "2px",
         }}
         >{row.indicadores}</TableCell>
-        {["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"].map((month) => (
-          <TableCell align="center" key={month}>
-            {typeof row[month] === "object"
-              ? Object.entries(row[month])
-                  .map(([key, value]) => `${key}: ${value}`)
-                  .join(", ")
-              : row[month] !== undefined
-              ? row[month]
-              : "-"}
-          </TableCell>
-        ))}
-        {["fieam", "sesi", "senai", "iel"].map((key) => (
-          <TableCell align="center" key={key}>
-            {row.acumulado && row.acumulado[key] !== undefined ? row.acumulado[key] : "-"}
-          </TableCell>
-        ))}
+{["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"].map((month) => (
+  <TableCell align="center" key={month}>
+    {row[month as keyof RowData] !== undefined
+      ? typeof row[month as keyof RowData] === "object"
+        ? JSON.stringify(row[month as keyof RowData]) // Converte objetos em string
+        : row[month as keyof RowData]
+      : "-"}
+  </TableCell>
+))}
+
+{["fieam", "sesi", "senai", "iel"].map((key) => (
+  <TableCell align="center" key={key}>
+    {row.acumulado[key as keyof typeof row.acumulado] !== undefined
+      ? typeof row.acumulado[key as keyof typeof row.acumulado] === "object"
+        ? JSON.stringify(row.acumulado[key as keyof typeof row.acumulado]) // Converte objetos em string
+        : row.acumulado[key as keyof typeof row.acumulado]
+      : "-"}
+  </TableCell>
+))}
       </TableRow>
     ))
   ))}
@@ -337,7 +355,7 @@ const Promocoes: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/11/2024</h4>
+      <h4>Atualizado até 17/01/2025</h4>
     </div>
   );
 };

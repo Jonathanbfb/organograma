@@ -18,7 +18,7 @@ import {
 
 const Comercial: React.FC = () => {
   const navigate = useNavigate();
-  const [selectedYear, setSelectedYear] = useState("2024");
+  const [selectedYear, setSelectedYear] = useState("2025");
 
   const data2024 = [
     { indicadores: "Qtd. profissionais ativos no mês", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", "nov": 10,"dez": "9","acumulado": { "fieam": 19, "sesi": "-", "senai": "-", "iel": "-" } },
@@ -32,9 +32,9 @@ const Comercial: React.FC = () => {
   "ago": "-",
   "set": "-",
   "out": "-",
-  "nov": 1600,
-  "dez": 1224, acumulado: { fieam: "2824", sesi: "-", senai: "-", iel: "-" } },
-    { indicadores: "Total de ações executadas no mês", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "560",dez: "591", acumulado: { fieam: "1151", sesi: "-", senai: "-", iel: "-" } },
+  "nov": "1.600",
+  "dez": "1.224", acumulado: { fieam: "2.824", sesi: "-", senai: "-", iel: "-" } },
+    { indicadores: "Total de ações executadas no mês", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "560",dez: "591", acumulado: { fieam: "1.151", sesi: "-", senai: "-", iel: "-" } },
     { indicadores: "Tempo médio por ação executada", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "2h51min",dez: "2h03min", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, },
     {
         "indicadores": "Nº de visitas realizadas",
@@ -49,8 +49,8 @@ const Comercial: React.FC = () => {
         "set": "-",
         "out": "-",
         "nov": 40,
-        "dez": 19,
-        "acumulado": { "fieam": 59, "sesi": "-", "senai": "-", "iel": "-" }
+        "dez": 20,
+        "acumulado": { "fieam": 60, "sesi": "-", "senai": "-", "iel": "-" }
       }, 
       {
         "indicadores": "Propostas geradas - Qtd",
@@ -84,13 +84,13 @@ const Comercial: React.FC = () => {
           "ago": "-",
           "set": "-",
           "out": "-",
-          "nov": "R$ 1.672.466",
-          "dez": "R$ 1.552.647",
+          "nov": "R$ 1.672.149",
+          "dez": "R$ 1.552.583",
           "acumulado": {
             "fieam": "-",
-            "sesi": "R$ 2.069.156",
+            "sesi": "R$ 2.069.092",
             "senai": "R$ 1.035.800",
-            "iel": "R$ 120.157"
+            "iel": "R$ 119.840"
           }
         },
       {
@@ -204,7 +204,7 @@ const Comercial: React.FC = () => {
   const data2025 = [
       
     { indicadores: "Qtd. profissionais ativos no mês", jan: 10, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", "nov": "-","dez": "-","acumulado": { "fieam": 10, "sesi": "-", "senai": "-", "iel": "-" } },
-    { indicadores: "Qtd. horas de trabalhadas no setor", "jan": 240,
+    { indicadores: "Qtd. horas de trabalhadas no setor", "jan": 960,
   "fev": "-",
   "mar": "-",
   "abr": "-",
@@ -215,12 +215,12 @@ const Comercial: React.FC = () => {
   "set": "-",
   "out": "-",
   "nov": "-",
-  "dez": "-", acumulado: { fieam: 240, sesi: "-", senai: "-", iel: "-" } },
+  "dez": "-", acumulado: { fieam: 960, sesi: "-", senai: "-", iel: "-" } },
     { indicadores: "Total de ações executadas no mês", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" } },
     { indicadores: "Tempo médio por ação executada", jan: "-", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, },
     {
         "indicadores": "Nº de visitas realizadas",
-        "jan": 22,
+        "jan": 102,
         "fev": "-",
         "mar": "-",
         "abr": "-",
@@ -232,11 +232,11 @@ const Comercial: React.FC = () => {
         "out": "-",
         "nov": "-",
         "dez": "-",
-        "acumulado": { "fieam": 22, "sesi": "-", "senai": "-", "iel": "-" }
+        "acumulado": { "fieam": 102, "sesi": "-", "senai": "-", "iel": "-" }
       }, 
       {
         "indicadores": "Propostas geradas - Qtd",
-        "jan": "15",
+        "jan": "119",
         "fev": "-",
         "mar": "-",
         "abr": "-",
@@ -250,13 +250,13 @@ const Comercial: React.FC = () => {
         "dez": "-",
         "acumulado": {
           "fieam": "-",
-          "sesi": 10,
-          "senai": 5,
-          "iel": "-"
+          "sesi": 75,
+          "senai": 26,
+          "iel": 18,
         }},
         {
           "indicadores": "Propostas geradas - R$",
-          "jan": "R$ 364.746",
+          "jan": "R$ 721.491",
           "fev": "-",
           "mar": "-",
           "abr": "-",
@@ -270,9 +270,10 @@ const Comercial: React.FC = () => {
           "dez": "-",
           "acumulado": {
             "fieam": "-",
-            "sesi": " R$ 341.718",
-            "senai": "R$ 23.028",
-            "iel": "-"
+            "sesi": "R$ 545.052",
+            "senai": "R$ 135.851",
+            "iel":  "R$ 40.586" 
+
           }
         },
       {
@@ -426,7 +427,7 @@ const Comercial: React.FC = () => {
   const handlePrint = () => {
     window.print();
   };
-  const data = selectedYear === "2024" ? data2024 : data2025;
+  const data = selectedYear === "2025" ? data2025 : data2024;
 
   const groupedData = data.reduce((acc, row) => {
     const category = categorizeIndicator(row.indicadores);
@@ -472,9 +473,10 @@ const Comercial: React.FC = () => {
           indicatorColor="secondary"
           aria-label="Tabs de anos"
         >
-          <Tab value="2024" label="2024" />
-          
           <Tab value="2025" label="2025" />
+          
+          <Tab value="2024" label="2024" />
+
         </Tabs>
       </Box>
       <Paper sx={{ marginTop: "20px" }}>
@@ -595,7 +597,7 @@ const Comercial: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 03/01/2025</h4>
+      <h4>Atualizado até 20/01/2025</h4>
     </div>
   );
 };
