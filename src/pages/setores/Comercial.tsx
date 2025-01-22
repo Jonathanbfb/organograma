@@ -64,12 +64,12 @@ const Comercial: React.FC = () => {
         "ago":"-",
         "set": "-",
         "out": "-",
-        "nov": 147,
-        "dez": 132,
+        "nov": 144,
+        "dez": 128,
         "acumulado": {
           "fieam": "-",
           "sesi": 168,
-          "senai": 69,
+          "senai": 62,
           "iel": 42
         }},
         {
@@ -84,12 +84,12 @@ const Comercial: React.FC = () => {
           "ago": "-",
           "set": "-",
           "out": "-",
-          "nov": "R$ 1.672.149",
-          "dez": "R$ 1.552.583",
+          "nov": "R$ 1.651.434",
+          "dez": "R$ 1.370.626",
           "acumulado": {
             "fieam": "-",
             "sesi": "R$ 2.069.092",
-            "senai": "R$ 1.035.800",
+            "senai": "R$ 833.128",
             "iel": "R$ 119.840"
           }
         },
