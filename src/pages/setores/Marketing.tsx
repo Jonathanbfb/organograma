@@ -110,7 +110,7 @@ const Marketing: React.FC = () => {
                   <Button
                     variant="contained"
                     color="primary"
-                    onClick={() => navigate("/organograma")}
+                    onClick={() => navigate("/indicadores")}
                     style={{ marginBottom: "20px" }}
                   >
                     Voltar

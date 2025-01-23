@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import styles from "./organogramaStyles";
 import Sidebar from "./Sidebar";
 
-const Organograma: React.FC = () => {
+const indicadores: React.FC = () => {
   const navigate = useNavigate();
 
   const handleNavigate = (path: string) => {
@@ -42,7 +42,7 @@ const Organograma: React.FC = () => {
           <Button
             labelHeading="Setor Call Center"
             labelSubheading="Supervisora: Ariana Costa"
-            onClick={() => handleNavigate("/setor/Call Center")}
+            onClick={() => handleNavigate("/setor/CallCenter")}
           />
           <Button
             labelHeading="Setor de Marketing"
@@ -61,7 +61,7 @@ const Organograma: React.FC = () => {
           <Button
             labelHeading="Setor Administrativo"
             labelSubheading="Coordenadora: Edivalda Martins"
-            onClick={() => handleNavigate("/setor/Administração")}
+            onClick={() => handleNavigate("/setor/Administracao")}
           />
           <Button
             labelHeading="Setor Pesquisa de Mercado"
@@ -71,7 +71,7 @@ const Organograma: React.FC = () => {
           <Button
             labelHeading="Setor Redes Sociais"
             labelSubheading="Coordenador: Diego Nobre"
-            onClick={() => handleNavigate("/setor/Redes Sociais")}
+            onClick={() => handleNavigate("/setor/RedesSociais")}
           />
           <Button
             labelHeading="Setor Inteligência de Mercado"
@@ -81,7 +81,7 @@ const Organograma: React.FC = () => {
           <Button
             labelHeading="Setor Promoções e Propaganda"
             labelSubheading="Coordenadora: Etienne Lopes"
-            onClick={() => handleNavigate("/setor/Promoções")}
+            onClick={() => handleNavigate("/setor/Promocoes")}
           />
         </div>
 
@@ -91,4 +91,4 @@ const Organograma: React.FC = () => {
   );
 };
 
-export default Organograma;
+export default indicadores;

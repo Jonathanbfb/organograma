@@ -1,9 +1,9 @@
-import React from "react";
+import footerLogo from "../../../../public/images/footer_logo.svg";
 
 const Footer: React.FC = () => (
   <footer style={{ textAlign: "center", marginTop: "20px" }}>
     <img
-      src="images/footer_logo.svg"
+      src={footerLogo} // Caminho relativo à pasta `public`
       alt="Rodapé"
       style={{ width: "500px", height: "auto", marginTop: "10px" }}
     />
@@ -11,3 +11,4 @@ const Footer: React.FC = () => (
 );
 
 export default Footer;
+

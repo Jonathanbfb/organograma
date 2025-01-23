@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
-//import Dashboard from "./pages/Dashboard";
 import Marketing from "./pages/setores/Marketing.tsx";
 import Comercial from "./pages/setores/Comercial.tsx";
 import Design from "./pages/setores/Design";
@@ -11,9 +10,9 @@ import Pesquisa from "./pages/setores/Pesquisa";
 import RedesSociais from "./pages/setores/RedesSociais";
 import Mercado from "./pages/setores/Mercado";
 import Promocoes from "./pages/setores/Promocoes";
-import Organograma from "./pages/setores/components/organograma.tsx";
 import Dashboard from "./pages/Dashboard.tsx";
 import Geral from "./pages/setores/Geral.tsx";
+import Indicadores from "./pages/setores/components/indicadores.tsx";
 
 interface User {
   username: string;
@@ -49,17 +48,17 @@ const App: React.FC = () => {
           path="/"
           element={
             isAuthenticated ? (
-              <Navigate to="/Organograma" />
+              <Navigate to="/indicadores" />
             ) : (
               <Login onLogin={handleLogin} />
             )
           }
         />
         <Route
-          path="/Organograma"
+          path="/indicadores"
           element={
             isAuthenticated ? (
-              <Organograma />
+              <Indicadores />
             ) : (
               <Navigate to="/" />
             )
@@ -69,12 +68,12 @@ const App: React.FC = () => {
         <Route path="/setor/Marketing" element={<Marketing />} />
         <Route path="/setor/Comercial" element={<Comercial />} />
         <Route path="/setor/Design" element={<Design />} />
-        <Route path="/setor/Call Center" element={<CallCenter />} />
-        <Route path="/setor/Administração" element={<Administracao />} />
+        <Route path="/setor/CallCenter" element={<CallCenter />} />
+        <Route path="/setor/Administracao" element={<Administracao />} />
         <Route path="/setor/Pesquisa" element={<Pesquisa />} />
-        <Route path="/setor/Redes Sociais" element={<RedesSociais />} />
+        <Route path="/setor/RedesSociais" element={<RedesSociais />} />
         <Route path="/setor/Mercado" element={<Mercado />} />
-        <Route path="/setor/Promoções" element={<Promocoes />} />
+        <Route path="/setor/Promocoes" element={<Promocoes />} />
         <Route path="/setor/Geral" element={<Geral />} />
       </Routes>
     </Router>

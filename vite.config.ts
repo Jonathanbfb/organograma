@@ -1,10 +1,28 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+
 export default defineConfig({
+ 
   plugins: [react()],
+base: '/indicadores', 
   server: {
-    host: true, // Faz com que o servidor seja acessível na rede local e mostre o IP
+    allowedHosts: ['www.fieam.com.br'],
+    host: true,  
+    hmr: {
+      host: 'www.fieam.com.br',
+      port: 443, // Porta padrão para HTTPS (se estiver usando HTTPS)
+    },
+    
+  },
+  
+  build: {
+    outDir: 'dist', 
   },
 })
+
+
+
+
+
+
