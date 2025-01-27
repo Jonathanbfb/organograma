@@ -514,7 +514,7 @@ Tipo
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/11/2024</h4>
+      <h4>Atualizado até 27/01/2025 às 15h</h4>
     </div>
   );
 };
