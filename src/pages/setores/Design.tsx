@@ -96,58 +96,55 @@ const Design: React.FC = () => {
     },
     {
       "indicadores": "Total de ações executadas no mês",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 125, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 125, "sesi": "-", "senai": "-", "iel": "-" }
     },
    
     {
       "indicadores": "Tempo médio por ação executada",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "4h", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     }, 
     
     {
       "indicadores": "Demanda recebida compras",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 4, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 1, "sesi": "-", "senai": 1, "iel": 2 }
     },
     {
       "indicadores": "Demanda atendidas compras",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 4, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 1, "sesi": "-", "senai": 1, "iel": 2 }
     },
     {
       "indicadores": "Demanda recebida baixa complexidade",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 104, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 36, "sesi": 62, "senai": 3, "iel": 3 }
     },
     {
       "indicadores": "Demanda atendidas baixa complexidade",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 104, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 36, "sesi": 62, "senai": 3, "iel": 3 }
     },
     {
       "indicadores": "Demanda recebida média complexidade",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 9, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": 5, "senai": 2, "iel": 2 }
     },
     {
       "indicadores": "Demanda atendidas média complexidade",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+    "jan": 9, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": 5, "senai": 2, "iel": 2 }
     },
     {
       "indicadores": "Demanda recebida alta complexidade",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 8, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": 4, "senai": 2, "iel": 2 }
     },
-   
-    
-   
     {
       "indicadores": "Demanda atendidas alta complexidade",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 8, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": 4, "senai": 2, "iel": 2 }
     },
   ]
   const categorizeIndicator = (indicator: string): string => {
@@ -387,7 +384,7 @@ const Design: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 24/01/2025</h4>
+      <h4>Atualizado até 27/01/2025 às 11:55</h4>
     </div>
   );
 };
