@@ -33,18 +33,18 @@ const Pesquisa: React.FC = () => {
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 880,"dez": 748,
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 480,"dez": 408,
+      "acumulado": { "fieam": 888, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Total de ações executadas no mês",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 5,"dez": 2,
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     },
    
     {
       "indicadores": "Tempo médio por ação executada",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "96h","dez": "204h",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     }, 
     {
@@ -115,28 +115,28 @@ const Pesquisa: React.FC = () => {
     const data2025 = [
     {
       "indicadores": "Qtd. profissionais ativos no mês",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 4, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 4, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 408, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 408, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Total de ações executadas no mês",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 14, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     },
    
     {
       "indicadores": "Tempo médio por ação executada",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "29h8min", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     }, 
     {
       "indicadores": "Número de pesquisas realizadas",
-      "jan": "-",
+      "jan": 8,
       "fev": "-",
       "mar": "-",
       "abr": "-",
@@ -148,11 +148,11 @@ const Pesquisa: React.FC = () => {
       "out": "-",
       "nov": "-",
       "dez": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "acumulado": { "fieam": "-", "sesi": 7, "senai": "-", "iel": 1 }
     },
     {
-      "indicadores": "Tempo médio de realização das pesquisas",
-      "jan": "-",
+      "indicadores": "Nº de apresentações de resultado de pesquisa",
+      "jan": 6,
       "fev": "-",
       "mar": "-",
       "abr": "-",
@@ -164,24 +164,9 @@ const Pesquisa: React.FC = () => {
       "out": "-",
       "nov": "-",
       "dez": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "acumulado": { "fieam": 1, "sesi": 3, "senai": 1, "iel": 1 }
     },
-    {
-      "indicadores": "Índice de Satisfação dos clientes por instituição",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-"}
-    }
+  
   ]
   
     
@@ -387,7 +372,7 @@ const Pesquisa: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/11/2024</h4>
+      <h4>Atualizado até 27/01/2025 às 15h</h4>
     </div>
   );
 };

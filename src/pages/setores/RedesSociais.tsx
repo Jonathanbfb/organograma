@@ -144,13 +144,13 @@ const RedesSociais: React.FC = () => {
   const data2025 = [
     {
       "indicadores": "Qtd. profissionais ativos no mês",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 3, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 3, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 408, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 408, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Total de ações executadas no mês",
@@ -170,13 +170,15 @@ const RedesSociais: React.FC = () => {
     },
     {
       "indicadores": "Alcance total",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 785.706, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 39.500, "sesi": 387.410, "senai": 214.582, "iel": 144.214
+      }
     },
     {
       "indicadores": "Impressões (ADS)",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "1.563.641", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 41.200, "sesi": 697.581, "senai": 623.601, "iel": 201259
+      }
     },
     {
       "indicadores": "Cliques no anúncio",
