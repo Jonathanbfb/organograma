@@ -1,94 +1,84 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Grid, Box } from "@mui/material";
 import Header from "./Header";
-import Button from "./Button";
 import Footer from "./Footer";
-import styles from "./organogramaStyles";
 import Sidebar from "./Sidebar";
+import Button from "./Button";
 
-const indicadores: React.FC = () => {
+const Indicadores: React.FC = () => {
   const navigate = useNavigate();
 
   const handleNavigate = (path: string) => {
     navigate(path);
   };
+
   return (
-    <div style={{ display: "flex" }}>
-        <Sidebar />
-        <div style={{ ...styles.container, paddingTop: "0", marginTop: "0" }}>
-        <div style={{ marginBottom: "8px", marginTop: "0" }}>
-          <Header title="DIRETORIA CORPORATIVA DE MARKETING" />
-          <h2 style={{ margin: "0", padding: "0", fontSize: "20px",textAlign:"center" }}>
-            PAINEL DE INDICADORES
-          </h2>
-        </div>
+    <Box sx={{ display: "flex", flexDirection: "row", minHeight: "100vh" }}>
+      <Sidebar />
+      <Box sx={{ flexGrow: 1, padding: "16px",textAlign: "center" }}>
+        <Header title="DIRETORIA CORPORATIVA DE MARKETING" />
+        <h2 style={{ textAlign: "center", margin: "16px 0", fontSize: "20px" }}>
+          PAINEL DE INDICADORES
+        </h2>
 
-        {/* Nível 1 */}
-        <div style={styles.nivel}>
-          <Button
-            labelHeading="Diretoria de Marketing"
-            labelSubheading="Diretor: Paulo Pereira"
-            onClick={() => handleNavigate("/setor/Geral")}
-          />
-        </div>
+        {/* Grid Container */}
+        <Grid
+          container
+          spacing={2}
+          justifyContent="center"
+          alignItems="center"
+          sx={{ marginTop: "16px" }}
+        >
+          {/* Nível 1 - 1 botão (centralizado) */}
+          <Grid item xs={12} sm={12} md={12} lg={12} sx={{ display: "flex", justifyContent: "center" }}>
+            <Button
+              labelHeading="Diretoria de Marketing"
+              labelSubheading="Diretor: Paulo Pereira"
+              onClick={() => handleNavigate("/setor/Geral")}
+            />
+          </Grid>
 
-        {/* Nível 2 */}
-        <div style={styles.nivel}>
-          <Button
-            labelHeading="Setor Comercial"
-            labelSubheading="Supervisora: Adriana Dabela"
-            onClick={() => handleNavigate("/setor/Comercial")}
-          />
-          <Button
-            labelHeading="Setor Call Center"
-            labelSubheading="Supervisora: Ariana Costa"
-            onClick={() => handleNavigate("/setor/CallCenter")}
-          />
-          <Button
-            labelHeading="Setor de Marketing"
-            labelSubheading="Supervisora: Renata Nascimento"
-            onClick={() => handleNavigate("/setor/Marketing")}
-          />
-          <Button
-            labelHeading="Setor de Design"
-            labelSubheading="Supervisora: Mary Martins"
-            onClick={() => handleNavigate("/setor/Design")}
-          />
-        </div>
+          {/* Nível 2 - 4 botões (centralizados com espaçamento) */}
+          {[
+            { heading: "Setor Comercial", subheading: "Supervisora: Adriana Dabela", path: "/setor/Comercial" },
+            { heading: "Setor Call Center", subheading: "Supervisora: Ariana Costa", path: "/setor/CallCenter" },
+            { heading: "Setor de Marketing", subheading: "Supervisora: Renata Nascimento", path: "/setor/Marketing" },
+            { heading: "Setor de Design", subheading: "Supervisora: Mary Martins", path: "/setor/Design" },
+          ].map(({ heading, subheading, path }, index) => (
+            <Grid item xs={12} sm={6} md={3} lg={3} key={index} sx={{ display: "flex", justifyContent: "center" }}>
+              <Button labelHeading={heading} labelSubheading={subheading} onClick={() => handleNavigate(path)} />
+            </Grid>
+          ))}
 
-        {/* Nível 3 */}
-        <div style={styles.nivel}>
-          <Button
-            labelHeading="Setor Administrativo"
-            labelSubheading="Coordenadora: Edivalda Martins"
-            onClick={() => handleNavigate("/setor/Administracao")}
-          />
-          <Button
-            labelHeading="Setor Pesquisa de Mercado"
-            labelSubheading=""
-            onClick={() => handleNavigate("/setor/Pesquisa")}
-          />
-          <Button
-            labelHeading="Setor Redes Sociais"
-            labelSubheading="Coordenador: Diego Nobre"
-            onClick={() => handleNavigate("/setor/RedesSociais")}
-          />
-          <Button
-            labelHeading="Setor Inteligência de Mercado"
-            labelSubheading="Coordenadora: Lidiane Laborda"
-            onClick={() => handleNavigate("/setor/Mercado")}
-          />
-          <Button
-            labelHeading="Setor Promoções e Propaganda"
-            labelSubheading="Coordenadora: Etienne Lopes"
-            onClick={() => handleNavigate("/setor/Promocoes")}
-          />
-        </div>
+          {/* Nível 3 - 5 botões (centralizados com espaçamento e aumento do tamanho dos botões) */}
+          {[
+            { heading: "Setor Administrativo", subheading: "Coordenadora: Edivalda Martins", path: "/setor/Administracao" },
+            { heading: "Setor Pesquisa de Mercado", subheading: "", path: "/setor/Pesquisa" },
+            { heading: "Setor Redes Sociais", subheading: "Coordenador: Diego Nobre", path: "/setor/RedesSociais" },
+            { heading: "Setor Inteligência de Mercado", subheading: "Coordenadora: Lidiane Laborda", path: "/setor/Mercado" },
+            { heading: "Setor Promoções e Propaganda", subheading: "Coordenadora: Etienne Lopes", path: "/setor/Promocoes" },
+          ].map(({ heading, subheading, path }, index) => (
+            <Grid
+              item
+              xs={12} sm={6} md={2} lg={2} // Aqui, vou ajustar para dar um pouco mais de largura para os botões
+              key={index}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                // Ajuste no espaçamento horizontal, caso necessário
+                // flexGrow: 1 para garantir que o botão use mais espaço disponível
+              }}
+            >
+              <Button labelHeading={heading} labelSubheading={subheading} onClick={() => handleNavigate(path)} />
+            </Grid>
+          ))}
+        </Grid>
 
         <Footer />
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 
-export default indicadores;
+export default Indicadores;

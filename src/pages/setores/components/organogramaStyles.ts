@@ -1,42 +1,67 @@
-import { Margin } from "@mui/icons-material";
-import { colors } from "@mui/material";
+import { Theme } from "@mui/material/styles";
 
-const styles = {
-    container: {
-      display: "flex",
-      flexDirection: "column" as const,
-      alignItems: "center",
-      margin: "20px",
+const styles = (theme: Theme) => ({
+  container: {
+    display: "flex",
+    flexDirection: "column" as const,
+    alignItems: "center",
+    margin: "20px",
+    padding: "16px",
+    [theme.breakpoints.down("sm")]: {
+      margin: "10px",
+      padding: "8px",
     },
-    nivel: {
-      display: "flex",
-      justifyContent: "center",
-      margin: "10px 0",
+  },
+  nivel: {
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "wrap" as const,
+    margin: "10px 0",
+    gap: "16px",
+    [theme.breakpoints.down("md")]: {
+      gap: "12px",
     },
-    botao: {
-      backgroundColor: "blue",
-      border: "none",
-      color: "white",
-      width: "300px",
-      height: "150px",
-      margin: "5px",
-      borderRadius: "8px",
-      fontSize: "14px",
-      cursor: "pointer",
-      display: "flex",
-      flexDirection: "column" as const,
-      alignItems: "center",
-      justifyContent: "center",
-      transition: "background-color 0.3s ease",
+  },
+  botao: {
+    backgroundColor: "blue", // Cor de fundo azul
+    color: "white", // Cor do texto branca
+    border: "none",
+    width: "300px",
+    height: "150px",
+    margin: "5px",
+    borderRadius: "8px",
+    fontSize: "16px", // Tamanho inicial da fonte
+    fontWeight: "bold", // Texto em negrito
+    cursor: "pointer",
+    display: "flex",
+    flexDirection: "column" as const,
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center", // Centraliza o texto no botão
+    transition: "all 0.3s ease", // Animações suaves
+    "&:hover": {
+      backgroundColor: "#003d99", // Azul mais escuro no hover
     },
-    botaoHover: {
-      backgroundColor: "#003d99",
+    [theme.breakpoints.down("md")]: {
+      width: "250px", // Tamanho reduzido em telas médias
+      height: "120px",
+      fontSize: "14px", // Fonte menor
     },
-    h2:{
-      Margin:"0",
-      colors:"red",
-    }
-  };
-  
-  export default styles;
-  
+    [theme.breakpoints.down("sm")]: {
+      width: "200px", // Botões menores em telas pequenas
+      height: "100px",
+      fontSize: "12px", // Fonte ainda menor
+    },
+  },
+  h2: {
+    margin: "0",
+    color: "red",
+    fontSize: "20px",
+    textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "16px",
+    },
+  },
+});
+
+export default styles;

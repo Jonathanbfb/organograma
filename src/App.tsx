@@ -12,7 +12,7 @@ import Mercado from "./pages/setores/Mercado";
 import Promocoes from "./pages/setores/Promocoes";
 import Dashboard from "./pages/Dashboard.tsx";
 import Geral from "./pages/setores/Geral.tsx";
-import Indicadores from "./pages/setores/components/indicadores.tsx";
+import Indicadores from "./pages/setores/components/Indicadores.tsx";
 
 interface User {
   username: string;
