@@ -66,7 +66,7 @@ const Mercado: React.FC = () => {
         "iel": "8"
       }
     },
-    {
+   /* {
       "indicadores": "Nº de projetos - SESI EDUCAÇÃO",
       "jan": "-",
       "fev": "-",
@@ -233,35 +233,35 @@ const Mercado: React.FC = () => {
         "senai": "-",
         "iel": "1"
       }
-    }
+    } */
   ]
     const data2025 = [
 
       {
         "indicadores": "Qtd. profissionais ativos no mês",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 3, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": 3, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Qtd. de horas trabalhadas no setor",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 238, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": 238, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Total de ações executadas no mês",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 4, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": 4, "sesi": "-", "senai": "-", "iel": "-" }
       },
      
       {
         "indicadores": "Tempo médio por ação executada",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "jan": "59h", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
         "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
       }, 
   
     {
       "indicadores": "Nº de projetos em andamento",
-      "jan": "-",
+      "jan": 2,
       "fev": "-",
       "mar": "-",
       "abr": "-",
@@ -274,13 +274,33 @@ const Mercado: React.FC = () => {
       "nov": "-",
       "dez": "-",
       "acumulado": {
-        "fieam": "-",
+        "fieam": 2,
+        "sesi": "-",
+        "senai": "-",
+        "iel": "-"
+      }
+    }, {
+      "indicadores": "Nº de projetos concluído",
+      "jan": 2,
+      "fev": "-",
+      "mar": "-",
+      "abr": "-",
+      "mai": "-",
+      "jun": "-",
+      "jul": "-",
+      "ago": "-",
+      "set": "-",
+      "out": "-",
+      "nov": "-",
+      "dez": "-",
+      "acumulado": {
+        "fieam": 2,
         "sesi": "-",
         "senai": "-",
         "iel": "-"
       }
     },
-    {
+   /* {
       "indicadores": "Nº de projetos - SESI EDUCAÇÃO",
       "jan": "-",
       "fev": "-",
@@ -447,7 +467,7 @@ const Mercado: React.FC = () => {
         "senai": "-",
         "iel": "-"
       }
-    }
+    } */
   ]  
   
   
@@ -657,7 +677,7 @@ const Mercado: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/11/2024</h4>
+      <h4>Atualizado até 27/01/2025 às 16h</h4>
     </div>
   );
 };
