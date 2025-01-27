@@ -28,12 +28,12 @@ const Pesquisa: React.FC = () => {
   [
     {
       "indicadores": "Qtd. profissionais ativos no mês",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 4,"dez": 4,
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 880,"dez": 748,
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
@@ -63,7 +63,7 @@ const Pesquisa: React.FC = () => {
       "dez": 2,
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": 6 }
     },
-    {
+   /* {
       "indicadores": "Tempo médio de realização das pesquisas",
       "jan": "-",
       "fev": "-",
@@ -78,8 +78,8 @@ const Pesquisa: React.FC = () => {
       "nov": "-",
       "dez": "-",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
-    },
-    {
+    },*/
+   /* {
       "indicadores": "Índice de Satisfação dos clientes por instituição",
       "jan": "-",
       "fev": "-",
@@ -94,7 +94,23 @@ const Pesquisa: React.FC = () => {
       "nov": 1,
       "dez": "-",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": 1 }
-    }
+    }*/
+      {
+        "indicadores": "Nº de apresentações de resultado de pesquisa",
+        "jan": "-",
+        "fev": "-",
+        "mar": "-",
+        "abr": "-",
+        "mai": "-",
+        "jun": "-",
+        "jul": "-",
+        "ago": "-",
+        "set": "-",
+        "out": "-",
+        "nov": 1,
+        "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": 1 }
+      }
   ]
     const data2025 = [
     {
