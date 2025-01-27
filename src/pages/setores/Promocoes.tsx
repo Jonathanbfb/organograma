@@ -140,8 +140,8 @@ const Promocoes: React.FC = () => {
       },
       {
         "indicadores": "Nº de outdoors ativos por instituição",
-        "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 7, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": 4, "senai": 3, "iel": "-" }
       },
       {
         "indicadores": "Nº de mobiliário urbano ativo, por instituição",
