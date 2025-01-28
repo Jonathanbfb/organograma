@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({ labelHeading, labelSubheading, onClick 
       sx={{
         backgroundColor: "blue",
         color: "white",
-        width: "300px",
+        width: "250px", // Tamanho fixo ajustado para manter uniformidade
         height: "150px",
         margin: "5px",
         borderRadius: "8px",
@@ -32,11 +32,11 @@ const Button: React.FC<ButtonProps> = ({ labelHeading, labelSubheading, onClick 
           backgroundColor: "#003d99",
         },
         [theme.breakpoints.down("md")]: {
-          width: "250px",
+          width: "200px",
           height: "120px",
         },
         [theme.breakpoints.down("sm")]: {
-          width: "200px",
+          width: "180px",
           height: "100px",
           fontSize: "12px",
         },

@@ -16,7 +16,7 @@ const Indicadores: React.FC = () => {
   return (
     <Box sx={{ display: "flex", flexDirection: "row", minHeight: "100vh" }}>
       <Sidebar />
-      <Box sx={{ flexGrow: 1, padding: "16px",textAlign: "center" }}>
+      <Box sx={{ flexGrow: 1, padding: "16px", textAlign: "center" }}>
         <Header title="DIRETORIA CORPORATIVA DE MARKETING" />
         <h2 style={{ textAlign: "center", margin: "16px 0", fontSize: "20px" }}>
           PAINEL DE INDICADORES
@@ -31,7 +31,7 @@ const Indicadores: React.FC = () => {
           sx={{ marginTop: "16px" }}
         >
           {/* Nível 1 - 1 botão (centralizado) */}
-          <Grid item xs={12} sm={12} md={12} lg={12} sx={{ display: "flex", justifyContent: "center" }}>
+          <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
             <Button
               labelHeading="Diretoria de Marketing"
               labelSubheading="Diretor: Paulo Pereira"
@@ -46,12 +46,12 @@ const Indicadores: React.FC = () => {
             { heading: "Setor de Marketing", subheading: "Supervisora: Renata Nascimento", path: "/setor/Marketing" },
             { heading: "Setor de Design", subheading: "Supervisora: Mary Martins", path: "/setor/Design" },
           ].map(({ heading, subheading, path }, index) => (
-            <Grid item xs={12} sm={6} md={3} lg={3} key={index} sx={{ display: "flex", justifyContent: "center" }}>
+            <Grid item xs={12} sm={6} md={3} key={index} sx={{ display: "flex", justifyContent: "center" }}>
               <Button labelHeading={heading} labelSubheading={subheading} onClick={() => handleNavigate(path)} />
             </Grid>
           ))}
 
-          {/* Nível 3 - 5 botões (centralizados com espaçamento e aumento do tamanho dos botões) */}
+          {/* Nível 3 - 5 botões (centralizados com espaçamento e tamanho ajustado) */}
           {[
             { heading: "Setor Administrativo", subheading: "Coordenadora: Edivalda Martins", path: "/setor/Administracao" },
             { heading: "Setor Pesquisa de Mercado", subheading: "", path: "/setor/Pesquisa" },
@@ -61,14 +61,11 @@ const Indicadores: React.FC = () => {
           ].map(({ heading, subheading, path }, index) => (
             <Grid
               item
-              xs={12} sm={6} md={2} lg={2} // Aqui, vou ajustar para dar um pouco mais de largura para os botões
+              xs={12}
+              sm={6}
+              md={2.4} // Ajuste para usar mais espaço horizontalmente
               key={index}
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                // Ajuste no espaçamento horizontal, caso necessário
-                // flexGrow: 1 para garantir que o botão use mais espaço disponível
-              }}
+              sx={{ display: "flex", justifyContent: "center" }}
             >
               <Button labelHeading={heading} labelSubheading={subheading} onClick={() => handleNavigate(path)} />
             </Grid>
