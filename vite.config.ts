@@ -1,28 +1,29 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-
 export default defineConfig({
- 
   plugins: [react()],
-base: '/indicadores', 
+  base: '/indicadores', // Define a base do projeto
   server: {
-    allowedHosts: ['www.fieam.com.br'],
-    host: true,  
+    host: true,
+    port: 5173, // Porta padrão do Vite
     hmr: {
-      host: 'www.fieam.com.br',
-      port: 443, // Porta padrão para HTTPS (se estiver usando HTTPS)
+      host: 'localhost', // Ou 'www.fieam.com.br' se necessário
+      port: 443, // Se estiver usando HTTPS, caso contrário, pode remover essa linha
     },
-    
   },
-  
   build: {
-    outDir: 'dist', 
+    outDir: 'dist',
+  },
+  // 🔹 Adicionando um redirecionamento correto para React Router
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+  preview: {
+    port: 4173,
+    strictPort: true,
+    open: false,
   },
 })
-
-
-
-
-
-

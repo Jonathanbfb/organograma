@@ -30,32 +30,35 @@ const App: React.FC = () => {
     { username: "lidiane.laborda", password: "10203040" },
   ];
 
-  const handleLogin = (username: string, password: string) => {
+  const handleLogin = (username: string, password: string): boolean => {
     const user = users.find(
       (user) => user.username.toLowerCase() === username.toLowerCase() && user.password === password
     );
     if (user) {
       setIsAuthenticated(true);
+      return true;
     } else {
+
       alert("Credenciais inválidas");
+      return false;
     }
   };
 
   return (
-    <Router>
+    <Router basename="/indicadores">
       <Routes>
         <Route
           path="/"
           element={
             isAuthenticated ? (
-              <Navigate to="/indicadores" />
+              <Navigate to="/dashboard" />
             ) : (
               <Login onLogin={handleLogin} />
             )
           }
         />
         <Route
-          path="/indicadores"
+          path="/dashboard"
           element={
             isAuthenticated ? (
               <Indicadores />
@@ -75,6 +78,9 @@ const App: React.FC = () => {
         <Route path="/setor/Mercado" element={<Mercado />} />
         <Route path="/setor/Promocoes" element={<Promocoes />} />
         <Route path="/setor/Geral" element={<Geral />} />
+
+        {/* Rota para páginas não encontradas */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
