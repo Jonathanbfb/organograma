@@ -205,7 +205,7 @@ const CallCenter: React.FC = () => {
     <div style={{ padding: "20px" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <Typography variant="h4" gutterBottom>
-                Setor: Call Center
+                Setor: Contact Center
               </Typography>
               <div style={{ display: "flex", justifyContent: "flex-end" }}>
                 <Tooltip title="Voltar para o menu principal">

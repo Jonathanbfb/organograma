@@ -42,7 +42,7 @@ const Indicadores: React.FC = () => {
           {/* Nível 2 - 4 botões (centralizados com espaçamento) */}
           {[
             { heading: "Setor Comercial", subheading: "Supervisora: Adriana Dabela", path: "/setor/Comercial" },
-            { heading: "Setor Call Center", subheading: "Supervisora: Ariana Costa", path: "/setor/CallCenter" },
+            { heading: "Setor Contact Center", subheading: "Supervisora: Ariana Costa", path: "/setor/CallCenter" },
             { heading: "Setor de Marketing", subheading: "Supervisora: Renata Nascimento", path: "/setor/Marketing" },
             { heading: "Setor de Design", subheading: "Supervisora: Mary Martins", path: "/setor/Design" },
           ].map(({ heading, subheading, path }, index) => (
