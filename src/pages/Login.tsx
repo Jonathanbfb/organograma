@@ -77,7 +77,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
       >
         {!isMobile && (
           <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "#fff" }}>
-            LINKS DE CADASTRO
+            LINKS DE CADASTRO DE DADOS
           </Typography>
         )}
         <List>

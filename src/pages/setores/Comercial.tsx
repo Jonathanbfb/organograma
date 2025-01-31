@@ -15,6 +15,7 @@ import {
   Box,
   Tooltip,
 } from "@mui/material";
+import PowerBIModalComercial from "./modalBI/PowerBIModal";
 
 const Comercial: React.FC = () => {
   const navigate = useNavigate();
@@ -454,6 +455,7 @@ const Comercial: React.FC = () => {
                 >
                   Imprimir
                 </Button>
+                <PowerBIModalComercial></PowerBIModalComercial>
               </div>
             </div>
           </div>

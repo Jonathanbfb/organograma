@@ -8,7 +8,7 @@ export default defineConfig({
     host: true,
     port: 5173, // Porta padrão do Vite
     hmr: {
-      host: 'localhost', // Ou 'www.fieam.com.br' se necessário
+      host: 'www.fieam.com.br', // Ou 'www.fieam.com.br' se necessário
       port: 443, // Se estiver usando HTTPS, caso contrário, pode remover essa linha
     },
   },

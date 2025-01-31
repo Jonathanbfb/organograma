@@ -27,7 +27,15 @@ const App: React.FC = () => {
     { username: "jonathan.barros", password: "10203040" },
     { username: "danielle.sa", password: "10203040" },
     { username: "paulo.pereira", password: "10203040" },
-    { username: "lidiane.laborda", password: "10203040" },
+    { username: "lidiane.cardoso", password: "10203040" },
+    { username: "renata.nascimento", password: "10203040" },
+    { username: "mary.martins", password: "10203040" },
+    { username: "diego.nobre", password: "10203040" },
+    { username: "etienne.lopes", password: "10203040" },
+    { username: "arianne.pinto", password: "10203040" },
+    { username: "edivalda.martins", password: "10203040" },
+    { username: "adriana.almeida", password: "10203040" },
+  
   ];
 
   const handleLogin = (username: string, password: string): boolean => {
