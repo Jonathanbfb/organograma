@@ -32,7 +32,7 @@ const App: React.FC = () => {
     { username: "mary.martins", password: "10203040" },
     { username: "diego.nobre", password: "10203040" },
     { username: "etienne.lopes", password: "10203040" },
-    { username: "arianne.pinto", password: "10203040" },
+    { username: "ariana.costa", password: "10203040" },
     { username: "edivalda.martins", password: "10203040" },
     { username: "adriana.almeida", password: "10203040" },
   
@@ -51,7 +51,6 @@ const App: React.FC = () => {
       return false;
     }
   };
-
   return (
     <Router basename="/indicadores">
       <Routes>
@@ -86,12 +85,9 @@ const App: React.FC = () => {
         <Route path="/setor/Mercado" element={<Mercado />} />
         <Route path="/setor/Promocoes" element={<Promocoes />} />
         <Route path="/setor/Geral" element={<Geral />} />
-
-        {/* Rota para páginas não encontradas */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
 };
-
 export default App;

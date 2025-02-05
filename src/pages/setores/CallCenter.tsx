@@ -111,8 +111,8 @@ const CallCenter: React.FC = () => {
     }, 
       {
         "indicadores": "Atendimentos receptivos Telefone",
-        "jan": 2.086, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 83, "sesi": 1606, "senai": 364, "iel": 33 }
+        "jan": 2.548, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 85, "sesi": 1.987, "senai": 431, "iel": 45 }
       },
       {
         "indicadores": "Atendimentos receptivos WhatsApp",
@@ -136,8 +136,8 @@ const CallCenter: React.FC = () => {
       },
       {
         "indicadores": "Atendimentos ativos Telefone",
-        "jan": 802, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 802, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 1.144, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 1.144, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Propostas geradas - Qtd",

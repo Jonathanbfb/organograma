@@ -92,8 +92,8 @@ const Administracao: React.FC = () => {
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": 646, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 646, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 836, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 836, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Total de ações executadas no mês",
