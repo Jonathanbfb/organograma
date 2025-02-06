@@ -87,7 +87,7 @@ const Administracao: React.FC = () => {
     
     {
       "indicadores": "Qtd. profissionais ativos no mês",
-      "jan": 5, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 5, "fev": 5, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 5, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
@@ -108,8 +108,8 @@ const Administracao: React.FC = () => {
     }, 
     {
       "indicadores": "Número de demandas de ajustes de ponto",
-      "jan": 65, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-      "acumulado": { "fieam": 65, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 149, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": 149, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Apontamentos consolidados (% de conclusão)",
@@ -346,7 +346,7 @@ const Administracao: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/01/2024 às 14h</h4>
+      <h4>Atualizado até 06/02/2025 às 14h</h4>
     </div>
   );
 };

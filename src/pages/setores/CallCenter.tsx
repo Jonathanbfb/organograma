@@ -90,13 +90,13 @@ const CallCenter: React.FC = () => {
     
     {
       "indicadores": "Qtd. profissionais ativos no mês",
-      "jan": 11, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 11, "fev": 11, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 11, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": 1.144, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 1.496, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 1.936, "fev": 264, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 2.200, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Total de ações executadas no mês",
@@ -116,8 +116,8 @@ const CallCenter: React.FC = () => {
       },
       {
         "indicadores": "Atendimentos receptivos WhatsApp",
-        "jan": 19.873, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 19.873, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 22.241, "fev": "4.000", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 26.241, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Atendimentos receptivos Instagram",
@@ -131,8 +131,8 @@ const CallCenter: React.FC = () => {
       },
       {
         "indicadores": "Atendimentos receptivos E-mail",
-        "jan": 42, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 42, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 96, "fev": 147, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 96, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Atendimentos ativos Telefone",
@@ -357,7 +357,7 @@ const CallCenter: React.FC = () => {
           </Table> 
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/01/2024 às 09:49</h4>
+      <h4>Atualizado até 05/02/2025 às 09:49</h4>
     </div>
   );
 };
