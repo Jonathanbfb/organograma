@@ -36,19 +36,17 @@ const Marketing: React.FC = () => {
   ];
 
   const data2025 = [
-    { indicadores: "Qtd. profissionais ativos no mês", jan: 6, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-", dez: "-", acumulado: { fieam: 6, sesi: "-", senai: "-", iel: "-" } },
-    { indicadores: "Qtd. horas de trabalhadas no setor", jan: 816, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: 816, sesi: "-", senai: "-", iel: "-" } },
-    { indicadores: "Total de ações executadas no mês", jan: 470, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: 470, sesi: "-", senai: "-", iel: "-" } },
-    { indicadores: "Tempo médio por ação executada", jan: "1h43min", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, },
-    
-   
-    { indicadores: "Campanhas ativas", jan: 4, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-", dez: "-", acumulado: { fieam: 1, sesi: 1, senai: 1, iel: 1 } },
-    { indicadores: "Roteiro de vídeos", jan: 18, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: 1, sesi: 15, senai: 2, iel: "-" } },
-    { indicadores: "Vídeos Produzidos", jan: 13, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: 1, sesi: 5, senai: 2, iel: 5 } },
-    { indicadores: "Cards Produzidos", jan: 193, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: 2, sesi: 115, senai: 52, iel: 24 }, },
-    { indicadores: "Stories Produzidos", jan: 124, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov:"-", dez: "-", acumulado: { fieam: 5, sesi: 97, senai: 14, iel: 8 }, },
-    { indicadores: "Flyers Produzidos", jan: 14, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-" ,dez: "-", acumulado: { fieam: 2, sesi: 7, senai: 3, iel: 2 } ,},
-    { indicadores: "Copies Produzidos", jan: 104, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: 5, sesi: 61, senai: 19, iel: 19 } },
+    { indicadores: "Qtd. profissionais ativos no mês", jan: 6, fev: 6, mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-", dez: "-", acumulado: { fieam: 6, sesi: "-", senai: "-", iel: "-" } },
+    { indicadores: "Qtd. horas de trabalhadas no setor", jan: 1.056, fev: 72, mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: 1.128, sesi: "-", senai: "-", iel: "-" } },
+    { indicadores: "Total de ações executadas no mês", jan: 962, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: 962, sesi: "-", senai: "-", iel: "-" } },
+    { indicadores: "Tempo médio por ação executada", jan: "01h01min", fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: "-", sesi: "-", senai: "-", iel: "-" }, },
+    { indicadores: "Campanhas ativas", jan: 13, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-", dez: "-", acumulado: { fieam: 3, sesi: 4, senai: 3, iel: 3 } },
+    { indicadores: "Roteiro de vídeos", jan: 48, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: 2, sesi: 31, senai: 10, iel:  5} },
+    { indicadores: "Vídeos Produzidos", jan: 42, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: 2, sesi: 21, senai: 9, iel: 10 } },
+    { indicadores: "Cards Produzidos", jan: 397, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: 6, sesi: 252, senai: 101, iel: 38 }, },
+    { indicadores: "Stories Produzidos", jan: 209, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov:"-", dez: "-", acumulado: { fieam: 7, sesi: 156, senai: 30, iel: 16 }, },
+    { indicadores: "Flyers Produzidos", jan: 38, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-" ,dez: "-", acumulado: { fieam: 2, sesi: 17, senai: 10, iel: 9 } ,},
+    { indicadores: "Copies Produzidos", jan: 215, fev: "-", mar: "-", abr: "-", mai: "-", jun: "-", jul: "-", ago: "-", set: "-", out: "-", nov: "-",dez: "-", acumulado: { fieam: 13, sesi: 132, senai: 48, iel: 38 } },
   ];
 
   const categorizeIndicator = (indicator: string): string => {
@@ -292,7 +290,7 @@ Tipo
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/01/2025 às 10h</h4>
+      <h4>Atualizado até 05/02/2025 às 15h</h4>
     </div>
   );
 };
