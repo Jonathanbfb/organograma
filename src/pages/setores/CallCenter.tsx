@@ -90,8 +90,8 @@ const CallCenter: React.FC = () => {
     
     {
       "indicadores": "Qtd. profissionais ativos no mês",
-      "jan": 11, "fev": 11, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 11, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 11, "fev": 10, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 10, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
@@ -111,8 +111,8 @@ const CallCenter: React.FC = () => {
     }, 
       {
         "indicadores": "Atendimentos receptivos Telefone",
-        "jan": 2.548, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 85, "sesi": 1.987, "senai": 431, "iel": 45 }
+        "jan": 2.548, "fev": 585, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 89, "sesi": 2.505, "senai": 491, "iel": 48 }
       },
       {
         "indicadores": "Atendimentos receptivos WhatsApp",
