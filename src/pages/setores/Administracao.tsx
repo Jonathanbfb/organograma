@@ -175,20 +175,16 @@ const Administracao: React.FC = () => {
   
     return "";
   };
-
   const handleTabChange = (event: React.SyntheticEvent, newValue: string) => {
     setSelectedYear(newValue);
   };
-
   const data = selectedYear === "2024" ? data2024 : data2025;
-
   const groupedData = data.reduce((acc, row) => {
     const category = categorizeIndicator(row.indicadores);
     if (!acc[category]) acc[category] = [];
     acc[category].push(row);
     return acc;
   }, {});
-
   return (
     <div style={{ padding: "20px" }}>
      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -233,7 +229,6 @@ const Administracao: React.FC = () => {
           <Table>
           <TableHead>
   <TableRow>
-
     <TableCell
       rowSpan={2}
       style={{
@@ -244,7 +239,6 @@ const Administracao: React.FC = () => {
         minWidth: "180px",
         maxWidth: "180px",
         width: "180px",
-      
       }}
     >
       Indicadores
@@ -296,7 +290,6 @@ const Administracao: React.FC = () => {
     ))}
   </TableRow>
 </TableHead>
-
 <TableBody>
   {Object.entries(groupedData).map(([category, rows]) => (
     rows.map((row, rowIndex) => (
@@ -311,7 +304,6 @@ const Administracao: React.FC = () => {
           backgroundColor: rowIndex % 2 === 0 ? "#F5F5F5" : "#FFFFFF", // Alterna entre duas cores
         }}
       >
-        
         <TableCell
         style={{
           fontWeight: "bold",

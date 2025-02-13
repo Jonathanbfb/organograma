@@ -108,14 +108,14 @@ const Design: React.FC = () => {
     
     {
       "indicadores": "Demanda recebida compras",
-      "jan": 4, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 1, "sesi": "-", "senai": 1, "iel": 2 }
+      "jan": 86, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 77, "sesi": 9, "senai": "-", "iel": "-" }
     },
-    {
-      "indicadores": "Demanda atendidas compras",
-      "jan": 4, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 1, "sesi": "-", "senai": 1, "iel": 2 }
-    },
+ /*    {
+      "indicadores": "Demanda recebida compras",
+      "jan": 86, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 77, "sesi": 9, "senai": "-", "iel": "-" }
+    }, */
     {
       "indicadores": "Demanda recebida baixa complexidade",
       "jan": 104, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
@@ -182,21 +182,18 @@ const Design: React.FC = () => {
   const handlePrint = () => {
     window.print();
   };
-
   const groupedData = data.reduce((acc, row) => {
     const category = categorizeIndicator(row.indicadores);
     if (!acc[category]) acc[category] = [];
     acc[category].push(row);
     return acc;
   }, {});
-
   return (
     <div style={{ padding: "20px" }}>
        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <Typography variant="h4" gutterBottom>
               Setor: Design
             </Typography>
-
        <div style={{ display: "flex", justifyContent: "flex-end" }}>
                 <Tooltip title="Voltar para o menu principal">
                   <Button
@@ -217,7 +214,6 @@ const Design: React.FC = () => {
                   Imprimir
                 </Button>
               </div>
-              
               </div>
        <Box sx={{ width: "100%", marginBottom: "20px" }}>
         <Tabs
@@ -248,10 +244,8 @@ const Design: React.FC = () => {
     maxWidth: "30px", 
     whiteSpace: "nowrap",
     overflow: "hidden", 
-   
-  }}
+   }}
 >
-
 </TableCell>
     <TableCell
       rowSpan={2}
@@ -263,8 +257,7 @@ const Design: React.FC = () => {
         minWidth: "180px",
         maxWidth: "180px",
         width: "180px",
-      
-      }}
+        }}
     >
       Indicadores
     </TableCell>

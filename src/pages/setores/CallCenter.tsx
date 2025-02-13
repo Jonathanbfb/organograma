@@ -15,11 +15,9 @@ import {
   Box,
   Tooltip,
 } from "@mui/material";
-
 const CallCenter: React.FC = () => {
   const navigate = useNavigate();
   const [selectedYear, setSelectedYear] = useState("2025");
-
   const data2024 = 
   [
     {
@@ -83,9 +81,6 @@ const CallCenter: React.FC = () => {
       "acumulado": { "fieam": "-", "sesi": " R$ 4.272.169", "senai": "R$ 275.844", "iel": "R$ 83.400" }
     }
   ]
-  
-    
-
   const data2025 = [
     
     {
@@ -136,8 +131,8 @@ const CallCenter: React.FC = () => {
       },
       {
         "indicadores": "Atendimentos ativos Telefone",
-        "jan": 1.144, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 1.144, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 1.144, "fev": 146, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 1.290, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Propostas geradas - Qtd",
