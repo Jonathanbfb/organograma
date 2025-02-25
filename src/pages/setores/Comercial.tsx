@@ -71,18 +71,18 @@ const Comercial: React.FC = () => {
   
 const data2025 = [
     { "indicadores": "Qtd. profissionais ativos no mês", "jan": 10, "fev": 10, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": 10, "sesi": "-", "senai": "-", "iel": "-" } }, 
-    { "indicadores": "Qtd. horas de trabalhadas no setor", "jan": "1.760", "fev": 720, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "2.000", "sesi": "-", "senai": "-", "iel": "-" } }, 
-    { "indicadores": "Total de ações executadas no mês", "jan": 705, "fev": 518, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": 584, "sesi": "-", "senai": "-", "iel": "-" } }, 
-    { "indicadores": "Tempo médio por ação executada", "jan": "2h29min", "fev": "0h27min", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" } }, 
-    { "indicadores": "Nº de visitas realizadas", "jan": 177, "fev": 64, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": 192, "sesi": "-", "senai": "-", "iel": "-" } }, 
-    { "indicadores": "Propostas geradas - Qtd", "jan": 208, "fev": 106, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": 169, "senai": 64, "iel": 61 } }, 
-    { "indicadores": "Propostas geradas - R$", "jan": "R$ 938.476", "fev": "R$ 615.743", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": "R$ 1.100.246", "senai": " R$ 281.084", "iel": "R$ 141.700" } }, 
-    { "indicadores": "Propostas Ganha - Qtd", "jan": 91, "fev": 31, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": 54, "senai": 18, "iel": 8 } }, 
-    { "indicadores": "Propostas Ganha - R$", "jan": "R$ 240.606", "fev": "R$ 238.347", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": "R$ 162.783", "senai": "R$ 46.537", "iel": "R$ 6.866" } }, 
-    { "indicadores": "Pedidos gerados - Qtd", "jan": 122, "fev": 288, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": 340, "senai": 19, "iel": "-" } }, 
-    { "indicadores": "Pedidos gerados - R$", "jan": "R$ 962.145", "fev": "R$ 1.316.806", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": "R$ 1.055.986", "senai": "R$ 164.580", "iel": "-" } }, 
-    { "indicadores": "Pedidos faturados - Qtd", "jan": 117, "fev": 277, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": 69, "senai": 16, "iel": "-" } }, 
-    { "indicadores": "Pedidos faturados - R$", "jan": "R$ 952.009", "fev": "R$ 256.526", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": "R$ 1.054.072", "senai": "R$ 159.109", "iel": "-" } } ]
+    { "indicadores": "Qtd. horas de trabalhadas no setor", "jan": "1.760", "fev": "1.360", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "3.120", "sesi": "-", "senai": "-", "iel": "-" } }, 
+    { "indicadores": "Total de ações executadas no mês", "jan": 717, "fev": 1049, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": 1766, "sesi": "-", "senai": "-", "iel": "-" } }, 
+    { "indicadores": "Tempo médio por ação executada", "jan": "2h27min", "fev": "1h17min", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "1h52min", "sesi": "-", "senai": "-", "iel": "-" } }, 
+    { "indicadores": "Nº de visitas realizadas", "jan": 173, "fev": 101, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": 274, "sesi": "-", "senai": "-", "iel": "-" } }, 
+    { "indicadores": "Propostas geradas - Qtd", "jan": 205, "fev": 200, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": 229, "senai": 91, "iel": 85 } }, 
+    { "indicadores": "Propostas geradas - R$", "jan": "R$ 928.554", "fev": "R$ 1.107.629", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": "R$ 1.468.129", "senai": "R$ 354.955", "iel": " R$ 213.099" } }, 
+    { "indicadores": "Propostas Ganha - Qtd", "jan": 100, "fev": 78, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": 115, "senai": 35, "iel": 28 } }, 
+    { "indicadores": "Propostas Ganha - R$", "jan": "R$ 257.748", "fev": "R$ 414.980", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": "R$ 539.016", "senai": "R$ 107.798", "iel": "R$ 25.913" } }, 
+    { "indicadores": "Pedidos gerados - Qtd", "jan": 122, "fev": 339, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": 417, "senai": 44, "iel": "-" } }, 
+    { "indicadores": "Pedidos gerados - R$", "jan": "R$ 962.145", "fev": "R$ 1.682.397", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": "R$ 1.893.526", "senai": "R$ 751.016", "iel": "-" } }, 
+    { "indicadores": "Pedidos faturados - Qtd", "jan": 117, "fev": 331, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": 405, "senai": 43, "iel": "-" } }, 
+    { "indicadores": "Pedidos faturados - R$", "jan": "R$ 952.009", "fev": "R$ 1.626.889", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-", "acumulado": { "fieam": "-", "sesi": "R$ 1.833.889", "senai": "R$ 745.009", "iel": "-" } } ]
   
     const categorizeIndicator = (indicator: string): string => {
     const pagoIndicators = [
@@ -290,7 +290,7 @@ const data2025 = [
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 13/02/2025 às 16h</h4>
+      <h4>Atualizado até 25/02/2025 às 08h</h4>
     </div>
   );
 };
