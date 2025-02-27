@@ -217,12 +217,12 @@ const RedesSociais: React.FC = () => {
     },
     {
       "indicadores": "Qtd de E-mails enviados",
-      "jan": 1.476, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 1.476, "fev": "519", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 121, "sesi": 989, "senai": 366, "iel": "-" }
     },
     {
       "indicadores": "Taxa de abertura de e-mail",
-      "jan": 27, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 27, "fev": "10", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 8, "sesi": 11, "senai": 8, "iel": "-" }
     },
     {
