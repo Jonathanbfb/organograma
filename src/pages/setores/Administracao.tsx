@@ -29,7 +29,7 @@ const Administracao: React.FC = () => {
     {
       "indicadores": "Qtd. profissionais ativos no mês",
       "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": 5,"dez": 5,
-      "acumulado": { "fieam": 10, "sesi": "-", "senai": "-", "iel": "-" }
+      "acumulado": { "fieam": 5, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
@@ -87,66 +87,62 @@ const Administracao: React.FC = () => {
     
     {
       "indicadores": "Qtd. profissionais ativos no mês",
-      "jan": 5, "fev": 5, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 5, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 6, "fev": 6, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 6, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": 836, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 836, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "1.012", "fev": "874", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "1.886", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Total de ações executadas no mês",
-      "jan": 329, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 329, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "1.924", "fev": "570", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "2.474", "sesi": "-", "senai": "-", "iel": "-" }
     },
    
     {
       "indicadores": "Tempo médio por ação executada",
-      "jan": "1h57min", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "31min", "fev": "39min", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
     }, 
     {
       "indicadores": "Número de demandas de ajustes de ponto",
-      "jan": 149, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-      "acumulado": { "fieam": 149, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "149", "fev": "81", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": "230", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Apontamentos consolidados (% de conclusão)",
-      "jan": 11, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-      "acumulado": { "fieam": 11, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "11", "fev": "11", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": 22, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Número de medições",
-      "jan": 68, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-      "acumulado": { "fieam": 2, "sesi": 46, "senai": 18, "iel": 2 }
+      "jan": 68, "fev": "13", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": 3, "sesi": 52, "senai": 23, "iel": 3 }
     },
     {
       "indicadores": "Número de conferencia de notas fiscais",
-      "jan": 17, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-      "acumulado": { "fieam": 17, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "17", "fev": "19", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": 20, "sesi": "8", "senai": "7", "iel": "1" }
     },
     {
       "indicadores": "Número de cadastros CRM/Genesis",
-      "jan": 96, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-      "acumulado": { "fieam": 96, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "1.579", "fev": "382", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": "1.961", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Número de contratos renovados",
-      "jan": 3, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-      "acumulado": { "fieam": 3, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "38", "fev": "21", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": "-", "sesi": "59", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Número de adesões",
-      "jan": 69, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-      "acumulado": { "fieam": 69, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 42, "fev": "43", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": "-", "sesi": "31", "senai": "26", "iel": "28" }
     }
   ]
     
-    
-  
-  
-
   const categorizeIndicator = (indicator: string): string => {
     const pagoIndicators = [
       "Número de anúncios",
@@ -338,7 +334,7 @@ const Administracao: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 06/02/2025 às 14h</h4>
+      <h4>Atualizado até 27/02/2025 às 11h</h4>
     </div>
   );
 };

@@ -15,11 +15,11 @@ const Sidebar: React.FC = () => (
   >
     <h2 style={{ marginBottom: "20px", textAlign: "center" }}>Resumo 2025</h2>
     {[
-      { label: "Nº de clientes Industrial:", value: 1913 },
-      { label: "Clientes visitados:", value: 178 },
-      { label: "Propostas Realizadas:", value: 211 },
-      { label: "Produtos existentes:", value: 1023 },
-      { label: "Produtos Vendidos:", value: 118 },
+      { label: "Nº de clientes Industrial:", value: 1978 },
+      { label: "Clientes visitados:", value: 274 },
+      { label: "Propostas Realizadas:", value: 405 },
+      { label: "Produtos existentes:", value: 1028 },
+      { label: "Produtos Vendidos:", value: 448 },
     ].map((item, index) => (
       <div
         key={index}
@@ -56,7 +56,7 @@ const Sidebar: React.FC = () => (
       </div>
       
     ))}
-    <p style={{ margin: "0", padding: "0", fontSize: "15px",textAlign:"center" }} >Atualizado em 31/01/2025</p>
+    <p style={{ margin: "0", padding: "0", fontSize: "15px",textAlign:"center" }} >Atualizado em 27/02/2025</p>
   </div>
 );
 
