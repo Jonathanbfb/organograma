@@ -197,22 +197,22 @@ const RedesSociais: React.FC = () => {
     },
     {
       "indicadores": "COM (Custo por Mil Impressões)",
-      "jan": "51.72", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "51.72", "fev": "33,41", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 10.14, "sesi": 19.87, "senai": 6.99, "iel": 14.72}
     },
     {
       "indicadores": "Conversões",
-      "jan": 1.603, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 1.603, "fev": "5.492", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "-", "sesi": 673, "senai": 930, "iel": "-" }
     },
     {
       "indicadores": "Taxa de conversão (%)",
-      "jan": 59, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 59, "fev": "27", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "-", "sesi": 19, "senai": 40, "iel": "-" }
     },
     {
       "indicadores": "CPA (Custo por Aquisição)",
-      "jan": "13.15", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "13.15", "fev": "15,4", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "-", "sesi": 7.91, "senai": 5.24, "iel": "-" }
     },
     {
@@ -227,7 +227,7 @@ const RedesSociais: React.FC = () => {
     },
     {
       "indicadores": "Site - Visitantes únicos",
-      "jan": 9.395, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 9.395, "fev": "11.544", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 1.209, "sesi": 4.765, "senai": 3.421, "iel": "-" }
     },
     {
@@ -237,27 +237,27 @@ const RedesSociais: React.FC = () => {
     },
 {
       "indicadores": "Resposta de comentários nas redes sociais",
-      "jan": 157, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 157, "fev": "2.220", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 7, "sesi": 49, "senai": 72, "iel": 29 }
     },
     {
       "indicadores": "Contas Alcançadas",
-      "jan": 88.867, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 88.867, "fev": "450.493", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "18142", "sesi": "27419", "senai": "19205", "iel": "24101" }
     },
     {
       "indicadores": "Interações",
-      "jan": 3.672, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 3.672, "fev": "46.495", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 19, "sesi": 1.895, "senai": 1.757, "iel": 1 }
     },
 {
       "indicadores": "Taxa de Engajamento",
-      "jan": 50, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 50, "fev": "40,1", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 1, "sesi": 17, "senai": 14, "iel": 18 }
     }, 
     {
       "indicadores": "Seguidores",
-      "jan": 171.729, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 171.729, "fev": "177.273", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 8.925, "sesi": 59.847, "senai": 83.204, "iel": 19.753 }
     }, 
   ]
