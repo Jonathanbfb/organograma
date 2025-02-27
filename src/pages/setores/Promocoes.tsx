@@ -100,13 +100,13 @@ const Promocoes: React.FC = () => {
     [
       {
         "indicadores": "Qtd. profissionais ativos no mês",
-        "jan": 3, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
+        "jan": 3, "fev": "3", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
         "acumulado": { "fieam": 3, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Qtd. de horas trabalhadas no setor",
-        "jan": 528, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "528", "fev": "456", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
+        "acumulado": { "fieam": "984", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Total de ações executadas no mês",
@@ -120,22 +120,22 @@ const Promocoes: React.FC = () => {
       }, 
       {
         "indicadores": "Número de ações nas empresas",
-        "jan": 1, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 1, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 6, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 6, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Número de eventos externos",
-        "jan": 0, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "-", "fev": "1", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "1", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Qtd leads captados em ações nas empresas",
-        "jan": 10, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 10, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 124, "fev": "114", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 240, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Qtd leads captados em eventos externos (feiras)",
-        "jan": 0, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "jan": "-", "fev": "2", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
         "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
@@ -355,7 +355,7 @@ const Promocoes: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 17/01/2025</h4>
+      <h4>Atualizado até 27/02/2025 atualizado às 9h</h4>
     </div>
   );
 };

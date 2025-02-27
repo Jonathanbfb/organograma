@@ -6,7 +6,7 @@ import Comercial from "./pages/setores/Comercial.tsx";
 import Design from "./pages/setores/Design";
 import CallCenter from "./pages/setores/CallCenter.tsx";
 import Administracao from "./pages/setores/Administracao";
-import Pesquisa from "./pages/setores/Pesquisa";
+//import Pesquisa from "./pages/setores/Pesquisa";
 import RedesSociais from "./pages/setores/RedesSociais";
 import Mercado from "./pages/setores/Mercado";
 import Promocoes from "./pages/setores/Promocoes";
@@ -80,7 +80,7 @@ const App: React.FC = () => {
         <Route path="/setor/Design" element={<Design />} />
         <Route path="/setor/CallCenter" element={<CallCenter />} />
         <Route path="/setor/Administracao" element={<Administracao />} />
-        <Route path="/setor/Pesquisa" element={<Pesquisa />} />
+        {/* <Route path="/setor/Pesquisa" element={<Pesquisa />} /> */}
         <Route path="/setor/RedesSociais" element={<RedesSociais />} />
         <Route path="/setor/Mercado" element={<Mercado />} />
         <Route path="/setor/Promocoes" element={<Promocoes />} />

@@ -86,203 +86,65 @@ const Mercado: React.FC = () => {
         "iel": "-"
       }
     },
-   /* {
-      "indicadores": "Nº de projetos - SESI EDUCAÇÃO",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - SESI LAZER",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "1",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "1",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - SESI SAÚDE",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "1",
-      "dez": "1",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "2",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - SESI SST",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "2",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "2",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - SENAI",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - IEL",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - DCM",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "2",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "2"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - CNI",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "1",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "1"
-      }
-    } */
+     {
+        "indicadores": "Número de pesquisas realizadas",
+        "jan": "-",
+        "fev": "-",
+        "mar": "-",
+        "abr": "-",
+        "mai": "-",
+        "jun": "-",
+        "jul": "-",
+        "ago": "-",
+        "set": "-",
+        "out": "-",
+        "nov": 4,
+        "dez": 2,
+        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": 6 }
+      },
+        {
+          "indicadores": "Nº de apresentações de resultado de pesquisa",
+          "jan": "-",
+          "fev": "-",
+          "mar": "-",
+          "abr": "-",
+          "mai": "-",
+          "jun": "-",
+          "jul": "-",
+          "ago": "-",
+          "set": "-",
+          "out": "-",
+          "nov": 1,
+          "dez": "-",
+          "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": 1 }
+        }
+
   ]
     const data2025 = [
-
       {
         "indicadores": "Qtd. profissionais ativos no mês",
-        "jan": 3, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-        "acumulado": { "fieam": 3, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "4", "fev": "5", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": "4", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Qtd. de horas trabalhadas no setor",
-        "jan": 238, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-        "acumulado": { "fieam": 238, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "660", "fev": "722", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": "1.382", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Total de ações executadas no mês",
         "jan": 4, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
         "acumulado": { "fieam": 4, "sesi": "-", "senai": "-", "iel": "-" }
       },
-     
       {
         "indicadores": "Tempo médio por ação executada",
         "jan": "59h", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
         "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
       }, 
-  
     {
       "indicadores": "Nº de projetos em andamento",
-      "jan": 2,
-      "fev": "-",
+      "jan": "7",
+      "fev": "9",
       "mar": "-",
       "abr": "-",
       "mai": "-",
@@ -294,15 +156,15 @@ const Mercado: React.FC = () => {
       "nov": "-",
       "dez": "-",
       "acumulado": {
-        "fieam": 2,
-        "sesi": "-",
-        "senai": "-",
+        "fieam": "14",
+        "sesi": "1",
+        "senai": "1",
         "iel": "-"
       }
     }, {
       "indicadores": "Nº de projetos realizados",
-      "jan": 2,
-      "fev": "-",
+      "jan": "4",
+      "fev": "5",
       "mar": "-",
       "abr": "-",
       "mai": "-",
@@ -314,184 +176,47 @@ const Mercado: React.FC = () => {
       "nov": "-",
       "dez": "-",
       "acumulado": {
-        "fieam": 2,
-        "sesi": "-",
+        "fieam": "8",
+        "sesi": "1",
         "senai": "-",
         "iel": "-"
       }
     },
-   /* {
-      "indicadores": "Nº de projetos - SESI EDUCAÇÃO",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - SESI LAZER",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - SESI SAÚDE",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - SESI SST",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - SENAI",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - IEL",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - DCM",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "-"
-      }
-    },
-    {
-      "indicadores": "Nº de projetos - CNI",
-      "jan": "-",
-      "fev": "-",
-      "mar": "-",
-      "abr": "-",
-      "mai": "-",
-      "jun": "-",
-      "jul": "-",
-      "ago": "-",
-      "set": "-",
-      "out": "-",
-      "nov": "-",
-      "dez": "-",
-      "acumulado": {
-        "fieam": "-",
-        "sesi": "-",
-        "senai": "-",
-        "iel": "-"
-      }
-    } */
+      {
+        "indicadores": "Número de pesquisas realizadas",
+        "jan": 15,
+        "fev": "-",
+        "mar": "-",
+        "abr": "-",
+        "mai": "-",
+        "jun": "-",
+        "jul": "-",
+        "ago": "-",
+        "set": "-",
+        "out": "-",
+        "nov": "-",
+        "dez": "-",
+        "acumulado": { "fieam": "7", "sesi": "2", "senai": "2", "iel": "2" }
+      },
+      {
+        "indicadores": "Nº de apresentações de resultado de pesquisa",
+        "jan": 13,
+        "fev": "-",
+        "mar": "-",
+        "abr": "-",
+        "mai": "-",
+        "jun": "-",
+        "jul": "-",
+        "ago": "-",
+        "set": "-",
+        "out": "-",
+        "nov": "-",
+        "dez": "-",
+        "acumulado": { "fieam": 1, "sesi": 9, "senai": 1, "iel": 2 }
+      },
+
   ]  
   
-  
-
   const categorizeIndicator = (indicator: string): string => {
     const pagoIndicators = [
       "Número de anúncios",
@@ -544,7 +269,7 @@ const Mercado: React.FC = () => {
     <div style={{ padding: "20px" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <Typography variant="h4" gutterBottom>
-                Setor: Inteligência de Mercado
+              Setor: Pesquisa & Inteligência de Mercado
               </Typography>
               <div style={{ display: "flex", justifyContent: "flex-end" }}>
                 <Tooltip title="Voltar para o menu principal">
@@ -697,7 +422,7 @@ const Mercado: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/01/2025 às 16h</h4>
+      <h4>Atualizado até 27/02/2025 às 10h</h4>
     </div>
   );
 };

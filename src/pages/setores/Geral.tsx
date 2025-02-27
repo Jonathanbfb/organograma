@@ -5,7 +5,7 @@ import Design from "./Design";
 import { Typography } from "@mui/material";
 import Administracao from "./Administracao";
 import Mercado from "./Mercado";
-import Pesquisa from "./Pesquisa";
+//import Pesquisa from "./Pesquisa";
 import Promocoes from "./Promocoes";
 import RedesSociais from "./RedesSociais";
 
@@ -27,7 +27,7 @@ const Geral: React.FC = () => {
     <Design></Design>
     <Administracao></Administracao>
     <Mercado></Mercado>
-    <Pesquisa></Pesquisa>
+    {/* <Pesquisa></Pesquisa> */}
     <Promocoes></Promocoes>
     <RedesSociais></RedesSociais>
 </div>

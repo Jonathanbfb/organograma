@@ -54,16 +54,16 @@ const Indicadores: React.FC = () => {
           {/* Nível 3 - 5 botões (centralizados com espaçamento e tamanho ajustado) */}
           {[
             { heading: "Setor Administrativo", subheading: "Coordenadora: Edivalda Martins", path: "/setor/Administracao" },
-            { heading: "Setor Pesquisa de Mercado", subheading: "", path: "/setor/Pesquisa" },
+           // { heading: "Setor Pesquisa de Mercado", subheading: "", path: "/setor/Pesquisa" },
             { heading: "Setor Redes Sociais", subheading: "Coordenador: Diego Nobre", path: "/setor/RedesSociais" },
-            { heading: "Setor Inteligência de Mercado", subheading: "Coordenadora: Lidiane Laborda", path: "/setor/Mercado" },
+            { heading: "Setor Pesquisa & Inteligência de Mercado", subheading: "Coordenadora: Lidiane Laborda", path: "/setor/Mercado" },
             { heading: "Setor Promoções e Propaganda", subheading: "Coordenadora: Etienne Lopes", path: "/setor/Promocoes" },
           ].map(({ heading, subheading, path }, index) => (
             <Grid
               item
               xs={12}
               sm={6}
-              md={2.4} // Ajuste para usar mais espaço horizontalmente
+              md={3} // Ajuste para usar mais espaço horizontalmente
               key={index}
               sx={{ display: "flex", justifyContent: "center" }}
             >

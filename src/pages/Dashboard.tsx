@@ -7,7 +7,7 @@ const setores = [
   "Design",
   "Call Center",
   "Administração",
-  "Pesquisa",
+  //"Pesquisa",
   "Redes Sociais",
   "Mercado",
   "Promoções",

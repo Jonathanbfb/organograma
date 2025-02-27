@@ -166,6 +166,7 @@ const Pesquisa: React.FC = () => {
       "dez": "-",
       "acumulado": { "fieam": 1, "sesi": 3, "senai": 1, "iel": 1 }
     },
+    
   
   ]
   
