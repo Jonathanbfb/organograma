@@ -133,13 +133,13 @@ const Mercado: React.FC = () => {
       },
       {
         "indicadores": "Total de ações executadas no mês",
-        "jan": 4, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-        "acumulado": { "fieam": 4, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 24, "fev": "29", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": "24", "sesi": "22", "senai": "3", "iel": "4" }
       },
       {
         "indicadores": "Tempo médio por ação executada",
-        "jan": "59h", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "27h30min", "fev": "24h53min", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": "25h", "sesi": "-", "senai": "-", "iel": "-" }
       }, 
     {
       "indicadores": "Nº de projetos em andamento",
@@ -184,8 +184,8 @@ const Mercado: React.FC = () => {
     },
       {
         "indicadores": "Número de pesquisas realizadas",
-        "jan": 15,
-        "fev": "-",
+        "jan": "7",
+        "fev": "8",
         "mar": "-",
         "abr": "-",
         "mai": "-",
@@ -196,12 +196,12 @@ const Mercado: React.FC = () => {
         "out": "-",
         "nov": "-",
         "dez": "-",
-        "acumulado": { "fieam": "7", "sesi": "2", "senai": "2", "iel": "2" }
+        "acumulado": { "fieam": "1", "sesi": "11", "senai": "1", "iel": "2" }
       },
       {
         "indicadores": "Nº de apresentações de resultado de pesquisa",
-        "jan": 13,
-        "fev": "-",
+        "jan": "6",
+        "fev": "7",
         "mar": "-",
         "abr": "-",
         "mai": "-",

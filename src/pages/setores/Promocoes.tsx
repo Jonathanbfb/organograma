@@ -120,8 +120,8 @@ const Promocoes: React.FC = () => {
       }, 
       {
         "indicadores": "Número de ações nas empresas",
-        "jan": 6, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 6, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "6", "fev": "12", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 18, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Número de eventos externos",
@@ -136,12 +136,12 @@ const Promocoes: React.FC = () => {
       {
         "indicadores": "Qtd leads captados em eventos externos (feiras)",
         "jan": "-", "fev": "2", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "acumulado": { "fieam": "2", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Nº de outdoors ativos por instituição",
-        "jan": 7, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "-", "sesi": 4, "senai": 3, "iel": "-" }
+        "jan":"7", "fev": "5", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": 8, "senai": 4, "iel": "-" }
       },
       {
         "indicadores": "Nº de mobiliário urbano ativo, por instituição",
