@@ -290,7 +290,7 @@ const data2025 = [
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 25/02/2025 às 08h</h4>
+      <h4>Atualizado até 28/02/2025 às 17h</h4>
     </div>
   );
 };
