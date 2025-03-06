@@ -232,8 +232,8 @@ const RedesSociais: React.FC = () => {
     },
     {
       "indicadores": "Publicação nas redes sociais",
-      "jan": 94, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 8, "sesi": 45, "senai": 21, "iel": 20 }
+      "jan": "94", "fev": "674", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 50, "sesi": 474, "senai": 150, "iel": 94 }
     },
 {
       "indicadores": "Resposta de comentários nas redes sociais",

@@ -87,7 +87,7 @@ const Administracao: React.FC = () => {
     
     {
       "indicadores": "Qtd. profissionais ativos no mês",
-      "jan": 6, "fev": 6, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 6, "fev": 5, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 6, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
@@ -97,7 +97,7 @@ const Administracao: React.FC = () => {
     },
     {
       "indicadores": "Total de ações executadas no mês",
-      "jan": "1.924", "fev": "570", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "1.904", "fev": "570", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "2.474", "sesi": "-", "senai": "-", "iel": "-" }
     },
    
@@ -118,13 +118,13 @@ const Administracao: React.FC = () => {
     },
     {
       "indicadores": "Número de medições",
-      "jan": 68, "fev": "13", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "jan": "33", "fev": "34", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
       "acumulado": { "fieam": 3, "sesi": 52, "senai": 23, "iel": 3 }
     },
     {
       "indicadores": "Número de conferencia de notas fiscais",
       "jan": "17", "fev": "19", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-      "acumulado": { "fieam": 20, "sesi": "8", "senai": "7", "iel": "1" }
+      "acumulado": { "fieam": "20", "sesi": "8", "senai": "7", "iel": "1" }
     },
     {
       "indicadores": "Número de cadastros CRM/Genesis",
