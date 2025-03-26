@@ -144,12 +144,12 @@ const RedesSociais: React.FC = () => {
   const data2025 = [
     {
       "indicadores": "Qtd. profissionais ativos no mês",
-      "jan": 3, "fev": "3", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 3, "fev": "3", "mar": "3", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 3, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": 528, "fev": "456", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 528, "fev": "456", "mar": "384", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam":984, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
@@ -165,29 +165,29 @@ const RedesSociais: React.FC = () => {
     }, 
     {
       "indicadores": "Número de anúncios",
-      "jan": "-", "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "-", "fev": "-", "mar": "120", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "29", "senai": "74", "iel": "17" }
     },
     {
       "indicadores": "Alcance total",
-      "jan": "918.090", "fev": "1.132.613", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "79.718", "sesi": "852.574", "senai": "800.310", "iel": "318.101"
+      "jan": "918.090", "fev": "1.132.613", "mar": "576.602", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "79.718", "sesi": "1.109.993", "senai": "1.092.919", "iel": "344.675"
       }
     },
     {
       "indicadores": "Impressões (ADS)",
-      "jan": "1.563.641", "fev": "3.384.256", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 41.200, "sesi": "1.811.868", "senai": "2.676.378", "iel": "418.451"
+      "jan": "1.563.641", "fev": "3.384.256", "mar": "1.255.535", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 41.200, "sesi": "2.299.389", "senai": "3.378.737", "iel": "484.106"
       }
     },
     {
       "indicadores": "Cliques no anúncio",
-      "jan": 17.214, "fev": "23.760", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 30, "sesi": "27.606", "senai": "38.714", "iel": "4.624" }
+      "jan": 17.214, "fev": "23.760", "mar": "20.727", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 30, "sesi": "35.025", "senai": "51.069", "iel": "5.577" }
     },
     {
       "indicadores": "CTR (Click-Through Rate)",
-      "jan": "186", "fev": "4.22", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "186", "fev": "4.22", "mar": "4.25", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": 89, "sesi": 1.06, "senai": 1.09, "iel": 97 }
     },
     {

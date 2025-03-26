@@ -142,7 +142,7 @@ const CallCenter: React.FC = () => {
       {
         "indicadores": "Propostas geradas - R$",
         "jan": "R$ 3.473.534", "fev": "R$ 1.087.296", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "-", "sesi": "3.614.390", "senai": "R$ 905.540", "iel": "R$ 40.898" }
+        "acumulado": { "fieam": "-", "sesi": "R$ 3.614.390", "senai": "R$ 905.540", "iel": "R$ 40.898" }
       }
     ]
     
