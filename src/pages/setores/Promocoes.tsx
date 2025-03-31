@@ -105,8 +105,8 @@ const Promocoes: React.FC = () => {
       },
       {
         "indicadores": "Qtd. de horas trabalhadas no setor",
-        "jan": "528", "fev": "456", "mar": "336", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
-        "acumulado": { "fieam": "1320", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "528", "fev": "456", "mar": "352", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
+        "acumulado": { "fieam": "1336", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Total de ações executadas no mês",
@@ -115,7 +115,7 @@ const Promocoes: React.FC = () => {
       },
       {
         "indicadores": "Tempo médio por ação executada",
-        "jan": "3h51min", "fev": "3h25min", "mar": "5h30min", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
+        "jan": "3h51min", "fev": "3h25min", "mar": "5h46min", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
         "acumulado": { "fieam": "4h15min", "sesi": "-", "senai": "-", "iel": "-" }
       }, 
       {
