@@ -100,48 +100,48 @@ const Promocoes: React.FC = () => {
     [
       {
         "indicadores": "Qtd. profissionais ativos no mês",
-        "jan": 3, "fev": "3", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
-        "acumulado": { "fieam": 3, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 3, "fev": "3", "mar": "2", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
+        "acumulado": { "fieam": "3", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Qtd. de horas trabalhadas no setor",
-        "jan": "528", "fev": "456", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
-        "acumulado": { "fieam": "984", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "528", "fev": "456", "mar": "336", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
+        "acumulado": { "fieam": "1320", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Total de ações executadas no mês",
-        "jan": 0, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "137" , "fev": "134", "mar": "61", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
+        "acumulado": { "fieam": "111", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Tempo médio por ação executada",
-        "jan": 0, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
-        "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "3h51min", "fev": "3h25min", "mar": "5h30min", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-","dez": "-",
+        "acumulado": { "fieam": "4h15min", "sesi": "-", "senai": "-", "iel": "-" }
       }, 
       {
         "indicadores": "Número de ações nas empresas",
-        "jan": "6", "fev": "12", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 18, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "6", "fev": "13", "mar": "6", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "25", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Número de eventos externos",
-        "jan": "-", "fev": "1", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "1", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "-", "fev": "1", "mar": "2", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "3", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Qtd leads captados em ações nas empresas",
-        "jan": 124, "fev": "114", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 240, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "124", "fev": "113", "mar": "38", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "275", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Qtd leads captados em eventos externos (feiras)",
-        "jan": "-", "fev": "2", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "2", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "-", "fev": "2", "mar": "10", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "12", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Nº de outdoors ativos por instituição",
-        "jan":"7", "fev": "5", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "-", "sesi": 8, "senai": 4, "iel": "-" }
+        "jan":"7", "fev": "5", "mar": "5", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": 12, "senai": 5, "iel": "-" }
       },
       {
         "indicadores": "Nº de mobiliário urbano ativo, por instituição",
@@ -355,7 +355,7 @@ const Promocoes: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/02/2025 atualizado às 9h</h4>
+      <h4>Atualizado até 31/03/2025 atualizado às 9h</h4>
     </div>
   );
 };
