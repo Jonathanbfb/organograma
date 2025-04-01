@@ -134,7 +134,7 @@ const Mercado: React.FC = () => {
       {
         "indicadores": "Total de ações executadas no mês",
         "jan": 24, "fev": "29", "mar": "25", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-        "acumulado": { "fieam": "24", "sesi": "22", "senai": "3", "iel": "4" }
+        "acumulado": { "fieam": "32", "sesi": "30", "senai": "11", "iel": "5" }
       },
       {
         "indicadores": "Tempo médio por ação executada",
