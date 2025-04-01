@@ -123,13 +123,13 @@ const Mercado: React.FC = () => {
     const data2025 = [
       {
         "indicadores": "Qtd. profissionais ativos no mês",
-        "jan": "4", "fev": "5", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-        "acumulado": { "fieam": "4", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "4", "fev": "5", "mar": "5", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": "5", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Qtd. de horas trabalhadas no setor",
-        "jan": "660", "fev": "722", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-        "acumulado": { "fieam": "1.382", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "660", "fev": "722", "mar": "840", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "acumulado": { "fieam": "2.222", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Total de ações executadas no mês",

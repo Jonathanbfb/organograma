@@ -16,6 +16,9 @@ import {
   Tooltip,
 } from "@mui/material";
 
+//arquivo não está sendo utilizado devido a fusão dos setores pesquisa de mercado com 
+//inteligência, o arquivo mercado.tsx está sendo utilizado
+
 const Pesquisa: React.FC = () => {
   const navigate = useNavigate();
   const [selectedYear, setSelectedYear] = useState("2025");
@@ -113,6 +116,7 @@ const Pesquisa: React.FC = () => {
       }
   ]
     const data2025 = [
+  
     {
       "indicadores": "Qtd. profissionais ativos no mês",
       "jan": 4, "fev": "-", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",

@@ -91,8 +91,8 @@ const Design: React.FC = () => {
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": "704", "fev": "608", "mar": "576", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "1.888", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "704", "fev": "608", "mar": "672", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "1.984", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Total de ações executadas no mês",
@@ -108,8 +108,8 @@ const Design: React.FC = () => {
     
     {
       "indicadores": "Demanda atendidas compras",
-      "jan": 86, "fev": "4", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 77, "sesi": 10, "senai": "3", "iel": "-" }
+      "jan": 86, "fev": "4", "mar": "32", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 77, "sesi": 18, "senai": "26", "iel": "1" }
     },
  /*    {
       "indicadores": "Demanda recebida compras",
@@ -118,32 +118,32 @@ const Design: React.FC = () => {
     }, */
     {
       "indicadores": "Demanda recebida baixa complexidade",
-      "jan": 104, "fev": "89", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 69, "sesi": 97, "senai": 12, "iel": 15 }
+      "jan": 104, "fev": "89", "mar": "115", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 69, "sesi": 105, "senai": 35, "iel": 16 }
     },
     {
       "indicadores": "Demanda atendidas baixa complexidade",
-      "jan": 104, "fev": "81", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 69, "sesi": 97, "senai": 12, "iel": 7 }
+      "jan": 104, "fev": "81", "mar": "115", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 69, "sesi":105, "senai": 35, "iel": 8 }
     },
     {
       "indicadores": "Demanda recebida média complexidade",
-      "jan": 9, "fev": "23", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 9, "fev": "23", "mar": "34", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "12", "sesi": 12, "senai": 6, "iel": 2 }
     },
     {
       "indicadores": "Demanda atendidas média complexidade",
-    "jan": 9, "fev": "23", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+    "jan": 9, "fev": "23", "mar": "34", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "12", "sesi": 13, "senai": 6, "iel": 2 }
     },
     {
       "indicadores": "Demanda recebida alta complexidade",
-      "jan": 8, "fev": "20", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 8, "fev": "20", "mar": "23", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "4", "sesi": 12, "senai": 7, "iel": 5 }
     },
     {
       "indicadores": "Demanda atendidas alta complexidade",
-      "jan": 8, "fev": "20", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": 8, "fev": "20", "mar": "23", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "4", "sesi": 12, "senai": 7, "iel": 5 }
     },
   ]
