@@ -107,7 +107,7 @@ const CallCenter: React.FC = () => {
       {
         "indicadores": "Atendimentos receptivos Telefone",
         "jan": "2.548", "fev": "2.959", "mar": "1.356", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 133, "sesi": 5.599, "senai": 1.030, "iel": 101 }
+        "acumulado": { "fieam": "133", "sesi": "5.599", "senai": "1.030", "iel": "101" }
       },
       {
         "indicadores": "Atendimentos receptivos WhatsApp",
@@ -348,7 +348,7 @@ const CallCenter: React.FC = () => {
           </Table> 
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 24/03/2025 às 9h</h4>
+      <h4>Atualizado até 01/04/2025 às 9h</h4>
     </div>
   );
 };
