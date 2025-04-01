@@ -46,7 +46,7 @@ const Mercado: React.FC = () => {
     }, 
 
     {
-      "indicadores": "Nº de projetos em andamento",
+      "indicadores": "Nº de Projetos/Pesquisa em andamento",
       "jan": "-",
       "fev": "-",
       "mar": "-",
@@ -66,7 +66,7 @@ const Mercado: React.FC = () => {
         "iel": "8"
       }
     },{
-      "indicadores": "Nº de projetos realizados",
+      "indicadores": "Nº de Projetos realizados",
       "jan": "-",
       "fev": "-",
       "mar": "-",
@@ -87,7 +87,7 @@ const Mercado: React.FC = () => {
       }
     },
      {
-        "indicadores": "Número de pesquisas realizadas",
+        "indicadores": "Nº de pesquisas realizadas",
         "jan": "-",
         "fev": "-",
         "mar": "-",
@@ -133,19 +133,19 @@ const Mercado: React.FC = () => {
       },
       {
         "indicadores": "Total de ações executadas no mês",
-        "jan": 24, "fev": "29", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "jan": 24, "fev": "29", "mar": "25", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
         "acumulado": { "fieam": "24", "sesi": "22", "senai": "3", "iel": "4" }
       },
       {
         "indicadores": "Tempo médio por ação executada",
-        "jan": "27h30min", "fev": "24h53min", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+        "jan": "27h30min", "fev": "24h53min", "mar": "33h36min", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
         "acumulado": { "fieam": "25h", "sesi": "-", "senai": "-", "iel": "-" }
       }, 
     {
-      "indicadores": "Nº de projetos em andamento",
+      "indicadores": "Nº de Projetos/Pesquisa em andamento",
       "jan": "7",
       "fev": "9",
-      "mar": "-",
+      "mar": "4",
       "abr": "-",
       "mai": "-",
       "jun": "-",
@@ -157,15 +157,15 @@ const Mercado: React.FC = () => {
       "dez": "-",
       "acumulado": {
         "fieam": "14",
-        "sesi": "1",
+        "sesi": "5",
         "senai": "1",
         "iel": "-"
       }
     }, {
-      "indicadores": "Nº de projetos realizados",
+      "indicadores": "Nº de Projetos realizados",
       "jan": "4",
       "fev": "5",
-      "mar": "-",
+      "mar": "3",
       "abr": "-",
       "mai": "-",
       "jun": "-",
@@ -177,16 +177,16 @@ const Mercado: React.FC = () => {
       "dez": "-",
       "acumulado": {
         "fieam": "8",
-        "sesi": "1",
+        "sesi": "4",
         "senai": "-",
         "iel": "-"
       }
     },
       {
-        "indicadores": "Número de pesquisas realizadas",
+        "indicadores": "Nº de pesquisas realizadas",
         "jan": "7",
         "fev": "8",
-        "mar": "-",
+        "mar": "12",
         "abr": "-",
         "mai": "-",
         "jun": "-",
@@ -196,13 +196,13 @@ const Mercado: React.FC = () => {
         "out": "-",
         "nov": "-",
         "dez": "-",
-        "acumulado": { "fieam": "1", "sesi": "11", "senai": "1", "iel": "2" }
+        "acumulado": { "fieam": "7", "sesi": "12", "senai": "5", "iel": "3" }
       },
       {
-        "indicadores": "Nº de apresentações de resultado de pesquisa",
+        "indicadores": "Nº de Apresentações/Relatórios/Análise de resultado de pesquisa",
         "jan": "6",
         "fev": "7",
-        "mar": "-",
+        "mar": "6",
         "abr": "-",
         "mai": "-",
         "jun": "-",
@@ -212,7 +212,7 @@ const Mercado: React.FC = () => {
         "out": "-",
         "nov": "-",
         "dez": "-",
-        "acumulado": { "fieam": 1, "sesi": 9, "senai": 1, "iel": 2 }
+        "acumulado": { "fieam": 3, "sesi": 9, "senai": 5, "iel": 2 }
       },
 
   ]  
@@ -258,12 +258,12 @@ const Mercado: React.FC = () => {
 
 
 
-  const groupedData = data.reduce((acc, row) => {
+   const groupedData = data.reduce((acc, row) => {
     const category = categorizeIndicator(row.indicadores);
     if (!acc[category]) acc[category] = [];
     acc[category].push(row);
     return acc;
-  }, {});
+  }, {}); 
 
   return (
     <div style={{ padding: "20px" }}>
@@ -422,7 +422,7 @@ const Mercado: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/02/2025 às 10h</h4>
+      <h4>Atualizado até 01/04/2025 às 10h</h4>
     </div>
   );
 };

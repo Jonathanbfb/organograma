@@ -90,49 +90,49 @@ const CallCenter: React.FC = () => {
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": "1.936", "fev": "1.156", "mar": "1.280", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "4.372", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "1.936", "fev": "1.156", "mar": "1.428", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "4.520", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Total de ações executadas no mês",
-      "jan": "30.045", "fev": "25.945", "mar": "16.466", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "72.456", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "30.045", "fev": "25.945", "mar": "22.878", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "78.868", "sesi": "-", "senai": "-", "iel": "-" }
     },
    
     {
       "indicadores": "Tempo médio por ação executada",
-      "jan": "4 min", "fev": "3 min", "mar": "5min", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "jan": "4 min", "fev": "3 min", "mar": "4min", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
       "acumulado": { "fieam": "4min", "sesi": "-", "senai": "-", "iel": "-" }
     }, 
       {
         "indicadores": "Atendimentos receptivos Telefone",
-        "jan": "2.548", "fev": "2.959", "mar": "993", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 130, "sesi": 5.307, "senai": 965, "iel": 98 }
+        "jan": "2.548", "fev": "2.959", "mar": "1.356", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 133, "sesi": 5.599, "senai": 1.030, "iel": 101 }
       },
       {
         "indicadores": "Atendimentos receptivos WhatsApp",
-        "jan": "22.241", "fev": "17.985", "mar": "13.168", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "53.394", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": "22.241", "fev": "17.985", "mar": "18.203", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "58.429", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Atendimentos receptivos Instagram",
-        "jan": 341, "fev": "2", "mar": "520", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 863, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 341, "fev": "2", "mar": "673", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 1.016, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Atendimentos receptivos Facebook",
-        "jan": 47, "fev": "2", "mar": "34", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 83, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 47, "fev": "2", "mar": "54", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 103, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Atendimentos receptivos E-mail",
-        "jan": 96, "fev": "2.907", "mar": "1.213", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "4.216", "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 96, "fev": "2.907", "mar": "1.848", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "4.851", "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Atendimentos ativos Telefone",
-        "jan": 1.144, "fev": 823, "mar": "538", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": 2.505, "sesi": "-", "senai": "-", "iel": "-" }
+        "jan": 1.144, "fev": 823, "mar": "744", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": 2.711, "sesi": "-", "senai": "-", "iel": "-" }
       },
       {
         "indicadores": "Propostas geradas - Qtd",
