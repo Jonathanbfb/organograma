@@ -96,20 +96,20 @@ const Design: React.FC = () => {
     },
     {
       "indicadores": "Total de ações executadas no mês",
-      "jan": 125, "fev": "116", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 241, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 207, "fev": "128", "mar": "205", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 540, "sesi": "-", "senai": "-", "iel": "-" }
     },
    
     {
       "indicadores": "Tempo médio por ação executada",
-      "jan": "4h", "fev": "3h", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "4h", "fev": "3h", "mar": "3h", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "3h", "sesi": "-", "senai": "-", "iel": "-" }
     }, 
     
     {
       "indicadores": "Demanda atendidas compras",
       "jan": 86, "fev": "4", "mar": "32", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 77, "sesi": 18, "senai": "26", "iel": "1" }
+      "acumulado": { "fieam": 59, "sesi": 20, "senai": "41", "iel": "2" }
     },
  /*    {
       "indicadores": "Demanda recebida compras",
@@ -118,33 +118,33 @@ const Design: React.FC = () => {
     }, */
     {
       "indicadores": "Demanda recebida baixa complexidade",
-      "jan": 104, "fev": "89", "mar": "115", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 69, "sesi": 105, "senai": 35, "iel": 16 }
+      "jan": 104, "fev": "89", "mar": "116", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 98, "sesi": 161, "senai": 32, "iel": 18 }
     },
     {
       "indicadores": "Demanda atendidas baixa complexidade",
-      "jan": 104, "fev": "81", "mar": "115", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 69, "sesi":105, "senai": 35, "iel": 8 }
+      "jan": 104, "fev": "89", "mar": "116", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": {  "fieam": 98, "sesi": 161, "senai": 32, "iel": 18 }
     },
     {
       "indicadores": "Demanda recebida média complexidade",
       "jan": 9, "fev": "23", "mar": "34", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "12", "sesi": 12, "senai": 6, "iel": 2 }
+      "acumulado": { "fieam": "8", "sesi": 45, "senai": 11, "iel": 2 }
     },
     {
       "indicadores": "Demanda atendidas média complexidade",
     "jan": 9, "fev": "23", "mar": "34", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "12", "sesi": 13, "senai": 6, "iel": 2 }
+      "acumulado": { "fieam": "8", "sesi": 45, "senai": 11, "iel": 2 }
     },
     {
       "indicadores": "Demanda recebida alta complexidade",
       "jan": 8, "fev": "20", "mar": "23", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "4", "sesi": 12, "senai": 7, "iel": 5 }
+      "acumulado": { "fieam": "5", "sesi": 24, "senai": 17, "iel": 5}
     },
     {
       "indicadores": "Demanda atendidas alta complexidade",
       "jan": 8, "fev": "20", "mar": "23", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "4", "sesi": 12, "senai": 7, "iel": 5 }
+      "acumulado": { "fieam": "5", "sesi": 24, "senai": 17, "iel": 5 }
     },
   ]
   const categorizeIndicator = (indicator: string): string => {
@@ -377,7 +377,7 @@ const Design: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/02/2025 às 11:55</h4>
+      <h4>Atualizado até 01/04/2025 às 11:55</h4>
     </div>
   );
 };
