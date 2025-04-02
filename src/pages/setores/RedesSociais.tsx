@@ -177,28 +177,28 @@ const RedesSociais: React.FC = () => {
     {
       "indicadores": "Impressões (ADS)",
       "jan": "1.563.641", "fev": "3.384.256", "mar": "3.263.810", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "0", "sesi": "1.774.586", "senai": "1.423.569", "iel": "65.655"
+      "acumulado": { "fieam": "-", "sesi": "1.774.586", "senai": "1.423.569", "iel": "65.655"
       }
     },
     {
       "indicadores": "Cliques no anúncio",
-      "jan": 17.214, "fev": "23.760", "mar": "48.370", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 0, "sesi": "14.987", "senai": "32.430", "iel": "953" }
+      "jan": "17.214", "fev": "23.760", "mar": "48.370", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "-", "sesi": "14.987", "senai": "32.430", "iel": "953" }
     },
     {
       "indicadores": "CTR (Click-Through Rate)",
       "jan": "1.86", "fev": "4.22", "mar": "4.25", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 0, "sesi": "1,25", "senai": "1,76", "iel":"1,24"}
+      "acumulado": { "fieam":"-", "sesi": "1,25", "senai": "1,76", "iel":"1,24"}
     },
     {
       "indicadores": "CPC (Custo por Clique)",
       "jan": "2.97", "fev": "1.52", "mar": "5,37", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 0, "sesi": "2", "senai": "1,07", "iel": "2,3" }
+      "acumulado": { "fieam": "-", "sesi": "2", "senai": "1,07", "iel": "2,3" }
     },
     {
       "indicadores": "COM (Custo por Mil Impressões)",
       "jan": "51.72", "fev": "33,41", "mar": "26,86", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 0, "sesi": "9,13", "senai":"8,74", "iel": "8,99"}
+      "acumulado": { "fieam": "-", "sesi": "9,13", "senai":"8,74", "iel": "8,99"}
     },
     {
       "indicadores": "Conversões",
