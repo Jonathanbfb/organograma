@@ -87,24 +87,24 @@ const Administracao: React.FC = () => {
     
     {
       "indicadores": "Qtd. profissionais ativos no mês",
-      "jan": 6, "fev": 5, "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": 6, "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": 6, "fev": 5, "mar": "5", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": 5, "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Qtd. de horas trabalhadas no setor",
-      "jan": "1.012", "fev": "874", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "1.886", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "1.012", "fev": "874", "mar": "798", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "2.684", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Total de ações executadas no mês",
-      "jan": "1.904", "fev": "570", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "2.474", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "1.603", "fev": "443", "mar": "472", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "2.518", "sesi": "-", "senai": "-", "iel": "-" }
     },
    
     {
       "indicadores": "Tempo médio por ação executada",
-      "jan": "31min", "fev": "39min", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "-", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "31min", "fev": "39min", "mar": "1h41min", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "56min", "sesi": "-", "senai": "-", "iel": "-" }
     }, 
     {
       "indicadores": "Número de demandas de ajustes de ponto",
@@ -128,18 +128,18 @@ const Administracao: React.FC = () => {
     },
     {
       "indicadores": "Número de cadastros CRM/Genesis",
-      "jan": "1.579", "fev": "382", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-      "acumulado": { "fieam": "1.961", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "1.329", "fev": "237", "mar": "411", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": "1.977", "sesi": "-", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Número de contratos renovados",
-      "jan": "38", "fev": "21", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-      "acumulado": { "fieam": "-", "sesi": "59", "senai": "-", "iel": "-" }
+      "jan": "38", "fev": "26", "mar": "13", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": "-", "sesi": "77", "senai": "-", "iel": "-" }
     },
     {
       "indicadores": "Número de adesões",
-      "jan": 42, "fev": "43", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-      "acumulado": { "fieam": "-", "sesi": "31", "senai": "26", "iel": "28" }
+      "jan": 26, "fev": "35", "mar": "48", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+      "acumulado": { "fieam": "-", "sesi": "32", "senai": "28", "iel": "49" }
     }
   ]
     
@@ -334,7 +334,7 @@ const Administracao: React.FC = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <h4>Atualizado até 27/02/2025 às 11h</h4>
+      <h4>Atualizado até 01/04/2025 às 11h</h4>
     </div>
   );
 };
