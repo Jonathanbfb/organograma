@@ -95,14 +95,14 @@ const CallCenter: React.FC = () => {
     },
     {
       "indicadores": "Total de ações executadas no mês",
-      "jan": "30.045", "fev": "25.945", "mar": "22.878", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "78.868", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "30.045", "fev": "25.945", "mar": "26.177", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "82.167", "sesi": "-", "senai": "-", "iel": "-" }
     },
    
     {
       "indicadores": "Tempo médio por ação executada",
-      "jan": "4 min", "fev": "3 min", "mar": "4min", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
-      "acumulado": { "fieam": "4min", "sesi": "-", "senai": "-", "iel": "-" }
+      "jan": "4 min", "fev": "3 min", "mar": "3 min", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-",
+      "acumulado": { "fieam": "3 min", "sesi": "-", "senai": "-", "iel": "-" }
     }, 
       {
         "indicadores": "Atendimentos receptivos Telefone",
@@ -136,17 +136,16 @@ const CallCenter: React.FC = () => {
       },
       {
         "indicadores": "Propostas geradas - Qtd",
-        "jan": "3.628", "fev": "1.267", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "1.210", "sesi": "3.024", "senai": "604", "iel": 57 }
+        "jan": "3.628", "fev": "1.267", "mar": "3.299", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "2.383", "sesi": "4.929", "senai": "799", "iel": 83 }
       },
       {
         "indicadores": "Propostas geradas - R$",
-        "jan": "R$ 3.473.534", "fev": "R$ 1.087.296", "mar": "-", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
-        "acumulado": { "fieam": "-", "sesi": "R$ 3.614.390", "senai": "R$ 905.540", "iel": "R$ 40.898" }
+        "jan": "R$ 3.473.534", "fev": "R$ 1.087.296", "mar": "R$ 553.135", "abr": "-", "mai": "-", "jun": "-", "jul": "-", "ago": "-", "set": "-", "out": "-", "nov": "-", "dez": "-",
+        "acumulado": { "fieam": "-", "sesi": "R$ 3.958.218", "senai": "R$ 1.103.148", "iel": "R$ 52.598" }
       }
     ]
-    
-  const categorizeIndicator = (indicator: string): string => {
+    const categorizeIndicator = (indicator: string): string => {
     const pagoIndicators = [
       "Número de anúncios",
       "Alcance total",
